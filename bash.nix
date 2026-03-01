@@ -37,8 +37,15 @@ programs.bash = {
    update() {
    cd ~/ranger097_nixos_dotfiles
    echo " Updating Nixos System"
-   sudo nixos-rebuild switch --upgrade
+   sudo nixos-rebuild switch --flake .#pokemon
    }
+   
+   upgrade() {
+   cd ~/ranger097_nixos_dotfiles
+   echo " Upgrading Nixos System"
+   nix flake update
+   }
+   
 
 
    eval "$(direnv hook bash)"
