@@ -3,11 +3,11 @@
 programs.bash = {
    enable = true;
    shellAliases = {
-      nii = "cd ~/Github/dotfiles";
-      bii = "sudo nano ~/Github/dotfiles/bash.nix";
-      gii = "sudo nano ~/.config/ghostty/config";
-      hii = "sudo nano ~/.config/hypr/hyprland.conf";
-      wii = "cd ~/.config/waybar";
+      nii = "cd ~/ranger097_nixos_dotfiles";
+      bii = "sudo nano ~/ranger097_nixos_dotfiles/bash.nix";
+      gii = "sudo nano ~/ranger097_nixos_dotfiles/ghostty/config";
+      hii = "sudo nano ~/ranger097_nixos_dotfiles/hypr/hyprland.conf";
+      wii = "cd ~/ranger097_nixos_dotfiles/waybar";
       cii = "cd ~/.config";
       ls = "lsd -a";
       };
