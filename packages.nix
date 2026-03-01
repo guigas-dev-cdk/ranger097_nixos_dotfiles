@@ -15,7 +15,7 @@ waybar
 swww
 rofi
 networkmanager
-kdePackages.networkmanager-qt
+networkmanagerapplet
 home-manager
 libsForQt5.qt5ct
 libsForQt5.qtstyleplugin-kvantum
