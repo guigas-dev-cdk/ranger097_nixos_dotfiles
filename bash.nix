@@ -37,7 +37,7 @@ programs.bash = {
    update() {
    cd ~/ranger097_nixos_dotfiles
    echo " Updating Nixos System"
-   sudo nixos-rebuild switch --flake .#pokemon
+   sudo nixos-rebuild switch --flake .#pokemon --impure
    }
    
    upgrade() {
