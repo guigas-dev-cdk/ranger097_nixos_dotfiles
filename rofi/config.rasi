@@ -18,7 +18,7 @@ border-radius: 0px;
 spacing: 0px;
 children: [mainbox];
 orientation: horizontal;
-background-color: rgba(32,32,32,1);
+background-color: rgba(0,0,0,1);
 height : 300px;
 width: 600px;
 border-color: #000000;
@@ -101,7 +101,7 @@ border: 2px solid;
 }
 
 element selected.normal {
-background-color: rgba(0,0,0,1);
+background-color: rgba(200,60,60,1);
 border-radius: 2px;
 text-color: rgba(200,200,200,1);
 border-color: rgba(0, 0, 0, 0);
