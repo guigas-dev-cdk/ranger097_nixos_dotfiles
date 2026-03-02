@@ -21,7 +21,7 @@ orientation: horizontal;
 background-color: rgba(0,0,0,1);
 height : 300px;
 width: 600px;
-border-color: #000000;
+border-color: rgba(200,60,60,1);
 padding: -109px 0px 0px 0px;
 }
 
@@ -101,7 +101,7 @@ border: 2px solid;
 }
 
 element selected.normal {
-background-color: rgba(200,60,60,1);
+background-color: rgba(0,0,0,1);
 border-radius: 2px;
 text-color: rgba(200,200,200,1);
 border-color: rgba(0, 0, 0, 0);
