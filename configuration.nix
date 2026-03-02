@@ -47,13 +47,16 @@
     };
   };
 
+
+
+
 services.pipewire.wireplumber.extraConfig."10-disable-internal-mic" = {
   "monitor.alsa.rules" = [
     {
       matches = [
         {
-          # Specifically targets the internal SoundWire/Digital MIC array
-          "node.name" = "~alsa_input.*dmic*"; 
+          # Targeted match for your specific internal SoundWire microphone
+          "node.name" = "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source";
         }
       ];
       actions = {
