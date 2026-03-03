@@ -15,7 +15,7 @@ in
   home.pointerCursor = {
      package = myCursor;
      name = "Pokemon";
-     size = 48;
+     size = 32;
      gtk.enable = true;
      x11.enable = true;
   };
