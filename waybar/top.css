@@ -23,12 +23,12 @@ margin-top: 10px;
 margin-bottom: 0px;
 font-family: Maple Mono NF;
 font-size: 10px;
-font-weight: 600;
+font-weight: 400;
 background: linear-gradient(rgba(0,0,0,0.2));
 color:#DFBE98;
 margin-right: 5px;
 border-radius: 100px;
-border: 1px solid #606060;
+border-bottom: 1px solid #606060;
 }
 
 #window:hover,
