@@ -3,7 +3,6 @@ format = """
 [𝖗𝖆𝖓𝖌𝖊𝖗](fg:#000000 bg:#b4b4b4)\
 [ ](fg:#B4B4B4 bg:#ffcc83)\
 [ ](fg:#ffcc83 bg:none)\
-[  ](#B4B4B4)\
 $directory\
 [](fg:#B4B4B4)\
 $git_branch\
@@ -42,7 +41,6 @@ truncation_symbol = ""
 "/home/ranger/ranger097_nixos_dotfiles/hyprland.nix" = " HYPRLAND.NIX"
 "/home/ranger/ranger097_nixos_dotfiles/shell.nix" = " SHELL.NIX"
 "/home/ranger/ranger097_nixos_dotfiles/packages.nix" = " PACKAGES.NIX"
-
 "/home/ranger/ranger097_nixos_dotfiles/starship" = " STARSHIP CONFIG"
 "/home/ranger/ranger097_nixos_dotfiles/ghostty" = " GHOSTTY"
 "/home/ranger/ranger097_nixos_dotfiles/kvantum" = " KVANTUM"
@@ -51,7 +49,6 @@ truncation_symbol = ""
 "/home/ranger/ranger097_nixos_dotfiles/wallpapers" = "   WALLPAPERS"
 "/home/ranger/ranger097_nixos_dotfiles/hypr" = " HYPRLAND"
 "/home/ranger/ranger097_nixos_dotfiles/wlogout" = " WLOGOUT"
-
 "/home/ranger/ranger097_nixos_dotfiles" = " NIXOS CONFIGS"
 "/home/ranger/Projects" = "  CODING PROJECTS"
 "~/.config" = " CONFIGS"
@@ -59,7 +56,6 @@ truncation_symbol = ""
 "Downloads" = " DOWNLOADS"
 "Music" = " MUSIC"
 "Pictures" = " PICTURE"
-
 "Home" = " HOME"
 "~" = " "
 
