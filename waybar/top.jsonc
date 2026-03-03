@@ -44,7 +44,7 @@
             "(.*)org.kde.dolphin(.*)": "DOLPHIN 海豚",
             "(.*)nm-connection-editor(.*)": "WIFI ワイファイ",
             "(.*)Kvantum Manager(.*)": "KVANTUM 主題",
-            "(.*)com.github.johnfactotum.Foliate(.*)": "BOOKS もと",
+            "(.*)Foliate(.*)": "BOOKS もと",
             " ": "RANGER097 レンジャー",
 
         }
