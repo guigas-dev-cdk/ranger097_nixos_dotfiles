@@ -9,7 +9,7 @@ networking.nameservers = [
 ];
 
 networking.networkmanager.ensureProfiles = {
-   environmentFiles = ["./wifi.env"];
+   environmentFiles = ["~/ranger097_nixos_dotfiles/wifi.env"];
    profiles = {
       Home = {
          connection = { id = "$WIFI_ID_HOME"; type = "wifi"; };
