@@ -18,7 +18,6 @@ $php\
 [](#ffffff)\ 
 \n$character"""
 
-
 [directory]
 style = '#B4B4B4'
 format = "[ $path]($style)"
@@ -42,33 +41,39 @@ format = '[[ $symbol $branch ](#909090)]($style)'
 style = '#B4B4B4'
 format = '[[($all_status$ahead_behind)](fg:#909090)]($style)'
 
-
-
 [nodejs]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = ""
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [golang]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+symbol = "󰟓"
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
-[php]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+[elixir]
+symbol = ""
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+
+[java]
+symbol = ""
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#000000"
+format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [fill]
 symbol = " "
 style = "fg:#B4B4B4" 
-
-
 
 [time]
 disabled = true
