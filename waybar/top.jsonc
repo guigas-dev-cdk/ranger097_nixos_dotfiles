@@ -10,14 +10,10 @@
 
     "modules-left": [
         "hyprland/window",
-     "hyprland/workspaces",
+     "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/spacer",
-        "custom/spacerRight",
-        "custom/qmmp",
-        "custom/spacerLeft",
-        "custom/spacer"
+        "custom/qmmp"
     ],
     "modules-right": [
         "custom/spacerRight",
@@ -90,11 +86,12 @@
     },
 
 "custom/qmmp": {
-    "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}'",
+    "format": "{}", 
+    "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}' || echo ''",
     "interval": 2,
     "max-length": 40,
     "on-click": "playerctl --player=qmmp play-pause",
-    "return-type": ""
+    "escape": true
 },
 
     "custom/vpn_ip": {
