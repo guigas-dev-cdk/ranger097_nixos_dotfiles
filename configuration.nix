@@ -7,6 +7,7 @@
     ./hyprland.nix
     ./packages.nix
     ./bash.nix
+    ./wifi.nix
   ];
 
   # Bootloader & Kernel
