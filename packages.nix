@@ -54,7 +54,7 @@ vscode
 nixd
 qt5.qtwayland
 qt6.qtwayland
-fastfetch
+pokeget-rs
 ];
 
 fonts.packages = with pkgs;[
