@@ -69,8 +69,8 @@ truncation_symbol = ""
 
 [git_branch]
 symbol = ""
-style = '#505050'
-format = '[[ $symbol $branch ](#909090)]($style)'
+style = '#808080'
+format = '[[ $symbol $branch ](#69491D)]($style)'
 
 [git_status]
 style = '#505050'
