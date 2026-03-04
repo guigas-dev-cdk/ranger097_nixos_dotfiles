@@ -14,8 +14,20 @@ networking.networkmanager.ensureProfiles = {
    environmentFiles = ["/home/ranger/ranger097_nixos_dotfiles/wifi.env"];
    profiles = {
       Home = {
-         connection = { id = "$WIFI_ID_HOME"; type = "wifi"; };
-         wifi-security = { key-mgmt = "wpa-psk"; psk = "WIFI_PW_HOME"; };
+         connection = { 
+	    id = "Home"; 
+	    type = "wifi";
+            autoconnect = true; 
+	 };
+         wifi = {
+            ssid = "$WIFI_ID_HOME";
+            mode = "infrastructure";
+	 };
+
+	  wifi-security = { 
+	    key-mgmt = "wpa-psk"; 
+	    psk = "$WIFI_PW_HOME"; 
+	 };
       };
     };
 
