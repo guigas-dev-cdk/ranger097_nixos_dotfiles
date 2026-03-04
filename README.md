@@ -1,8 +1,8 @@
 # Hello, Welcome to my [Nixos](https://github.com/NixOS/nixpkgs) dotfiles repo. <br/>
 Made for developers who like preconfigured or *"[riced](https://www.reddit.com/r/unixporn/)"* systems, isolated and reproducible developer environments (via direnv), and fun scripts ive made to automated basic system task. As I learn more about Linux, Nixos, Hyprland, Automation, Systems Development and Programming as a whole, I will update this repo periodically.
 
-This flake is labeled as "__--impure__" because it is hardware agnostic.<br/>
-(*aka it will pull your /etc/nixos/hardware-configuration.nix automatically*)
+This flake has an "__--impure__" flag because it is hardware agnostic.<br/>
+(*aka it will pull your /etc/nixos/hardware-configuration.nix automatically because nixos is [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*)
 
 ```
 sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#pokemon --impure
