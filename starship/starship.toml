@@ -65,7 +65,7 @@ format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 [golang]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [elixir]
 symbol = ""
