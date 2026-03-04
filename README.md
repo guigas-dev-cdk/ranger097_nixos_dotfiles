@@ -49,13 +49,11 @@ If you are like me and enjoy a good __[nerd font](https://www.nerdfonts.com/font
 
 Complete list of [packages](https://github.com/ranger097/ranger097_nixos_dotfiles/blob/main/packages.nix) contained in this flake.
 
-
-
-# Coming soon:
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+Mono&size=25&pause=1000&width=623&lines=Coming+soon%3A)](https://git.io/typing-svg)
 * Documentation
 * Full theme switcher written in golang.
 * More Wallpapers
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+Mono&size=25&pause=1000&width=623&lines=Fork+%C2%B7+Share+%C2%B7+Leave+a+star+%3A)+)](https://git.io/typing-svg)
+# FORK < SHARE < LEAVE A STAR
 
