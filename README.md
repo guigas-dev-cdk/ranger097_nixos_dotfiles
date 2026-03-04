@@ -54,15 +54,13 @@ Complete list of [packages](https://github.com/ranger097/ranger097_nixos_dotfile
 The cursor depicted in the screenshots above is a __[Pokemon Cursor](https://store.kde.org/p/1701595)__ (*you might be noticing a theme here.*) from the __[KDE Store](https://store.kde.org/browse/)__.
 
 
-
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&repeat=false&width=548&lines=Coming+soon%3A)](https://git.io/typing-svg)<br/>
-* Documentation
+* Documentation and a website.
 * Full theme switcher written in golang.
-* More Wallpapers
-* Vscode config
-
-
+* More 4k Anime Wallpapers.
+* Minimal Vscode config.
+* Hyprland settings app written in rust.
+* Waybar toggle script
 
 
 
