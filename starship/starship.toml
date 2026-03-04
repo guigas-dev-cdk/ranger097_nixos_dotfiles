@@ -24,12 +24,12 @@ truncate_to_repo = false
 
 [directory.substitutions]
 "/ranger097_nixos_dotfiles" = "dotfiles"
-"Documents" = "DOCUMENTS"
-"Downloads" = "DOWNLOADS"
-"Music" = "MUSIC"
-"Pictures" = "PICTURES"
-"Home" = "HOME"
-"~" = ""
+"Documents" = "documents"
+"Downloads" = "downloads"
+"Music" = "music"
+"Pictures" = "pictures"
+"Home" = "home"
+"~" = "home"
 
 
 [git_branch]
