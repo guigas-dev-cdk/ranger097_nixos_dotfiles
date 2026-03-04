@@ -1,6 +1,7 @@
 format = """
-[](fg:#acacac bg:none)\
-[   ペンギン ](fg:#000000 bg:#acacac)\
+[](fg:#18191D bg:none)\
+[  ](fg:#B4B4B4 bg:#18191D)\
+[ペンギン ](fg:#2A2A22 bg:#18191D)\
 [ ](fg:#acacac bg:#ea6151)\
 [ ](fg:#ea6151 bg:#4576FA)\
 [ ](fg:#4576FA bg:none)\
