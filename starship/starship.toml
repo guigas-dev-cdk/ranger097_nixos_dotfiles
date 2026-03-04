@@ -1,5 +1,4 @@
 format = """
-[  ](fg:#69491D bg:none)\
 [](fg:#101010 bg:none)\
 [█](fg:#101010 bg:none)\
 [󰏒 ](fg:#69491D bg:#101010)\
@@ -25,10 +24,6 @@ $elixir\
 $python\
 $c\
 $java
-[](fg:#505050)\ 
-[](fg:#505050)\ 
-[ $fill](fg:#505050)[](#505050)$time\
-[](#ffffff)\ 
 $character"""
 
 [directory]
