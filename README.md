@@ -11,6 +11,7 @@ sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#poke
 ```
 
 # Screenshots:
+This photo is an example of the rofi config.
 <img width="3840" height="2400" alt="2026-03-04-025925_hyprshot" src="https://github.com/user-attachments/assets/bdbeca52-1adf-485a-ab1c-9d1000484f7d" />
 <img width="3840" height="2400" alt="2026-03-04-025933_hyprshot" src="https://github.com/user-attachments/assets/3a1a3488-1611-4d58-89e4-1c82a1955452" />
 <img width="3840" height="2400" alt="2026-03-04-024600_hyprshot" src="https://github.com/user-attachments/assets/e325f2a0-f22d-4015-8458-7731257f27e7" />
