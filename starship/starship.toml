@@ -1,7 +1,7 @@
 format = """
-[](fg:#505050 bg:none)\
-[   ペンギン ](fg:#000000 bg:#505050)\
-[ ](fg:#505050 bg:#ea611)\
+[](fg:#acacac bg:none)\
+[   ペンギン ](fg:#000000 bg:#acacac)\
+[ ](fg:#acacac bg:#ea6151)\
 [ ](fg:#ea6151 bg:#4576FA)\
 [ ](fg:#4576FA bg:none)\
 $directory\
