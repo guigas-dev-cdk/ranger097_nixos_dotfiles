@@ -23,6 +23,12 @@ This photo is an example of __[Pokeget](https://github.com/talwat/pokeget-rs)__ 
 
 # Fonts:
 [Maple Mono NF](https://github.com/subframe7536/maple-font) is the only font I use. You can easily add more but its so beautiful i use it system wide.
+Im a sucker for font ligatures and italics(*I need all my fancy programming symbols and fancy cursive functions*).<br/>
+If you are like me and enjoy a good __[nerd font](https://www.nerdfonts.com/font-downloads)__ you might wanna check these out. 
+
+* [Victor Mono NF]()
+* [JetBrains Mono NF]()
+* [Caskaydia Cove NF]()
 
 # Featured applications included in this flake.
 
