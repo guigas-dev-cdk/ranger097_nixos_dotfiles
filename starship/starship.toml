@@ -55,12 +55,12 @@ format = '[[($all_status$ahead_behind)](fg:#909090)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [golang]
 symbol = ""
@@ -70,22 +70,22 @@ format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 [elixir]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [java]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [python]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [cpp]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [fill]
 symbol = " "
@@ -95,7 +95,7 @@ style = "fg:#B4B4B4"
 disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[ $time](fg:#CAAE48)]($style)'
+format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
 format = "[](fg:#69491D) "
