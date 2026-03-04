@@ -16,6 +16,8 @@ This photo is an example of my rofi config.
 
 This photo is an example of my minimal vscode config (free of clutter and only contains the tools i actually need).
 <img width="3840" height="2400" alt="2026-03-04-025933_hyprshot" src="https://github.com/user-attachments/assets/3a1a3488-1611-4d58-89e4-1c82a1955452" />
+
+This photo is an example of pokeget (very easily disabled, but why would you), it spawns random pokemon pixel art whenever i open a terminal.
 <img width="3840" height="2400" alt="2026-03-04-024600_hyprshot" src="https://github.com/user-attachments/assets/e325f2a0-f22d-4015-8458-7731257f27e7" />
 <img width="3840" height="2400" alt="2026-03-04-024628_hyprshot" src="https://github.com/user-attachments/assets/2b02bd34-a52d-4b8e-953e-13d0f77f7b0b" />
 
