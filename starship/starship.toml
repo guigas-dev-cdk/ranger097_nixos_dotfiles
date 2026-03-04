@@ -25,7 +25,7 @@ separator = ""
 
 [directory.substitutions]
 "/ranger097_nixos_dotfiles" = " dotfiles"
-"/Projects/go_projects" = "GO"
+"/Projects/go_projects" = "  go_projects"
 "Documents" = "󰣞 documents"
 "Downloads" = "󰉍 downloads"
 "Music" = "󱍙 music"
@@ -63,7 +63,7 @@ style = "bg:#000000"
 format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [golang]
-symbol = "󰟓"
+symbol = ""
 style = "bg:#000000"
 format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
