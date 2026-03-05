@@ -14,7 +14,7 @@ $python\
 $cpp\
 $java\
 \n$fill\
-\n$character"""
+\n$character\n"""
 
 [directory]
 style = '#707070'
