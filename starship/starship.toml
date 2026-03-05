@@ -30,14 +30,14 @@ truncate_to_repo = false
 "/Projects/java_projects" = "  Projects  java_projects "
 "/Projects/python_projects" = "  Projects  python_projects " 
 "/Projects/rust_projects" = "  Projects  rust_projects "
-
+"/ranger097_nixos_dotfiles/hypr" = "  dotfiles  hypr" 
 
 
 "Documents" = " 󰣞 documents"
 "Downloads" = " 󰉍 downloads"
 "Music" = " 󱍙 music"
 "Pictures" = " 󰉏 pictures"
-"Home/" = "home"
+"Home" = "welcome 󱂵 home ranger!"
 "~" = "home"
 "^/" = ""
 "/" = ""
