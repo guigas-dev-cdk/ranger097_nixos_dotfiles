@@ -13,7 +13,7 @@ $elixir\
 $python\
 $cpp\
 $java\
-$fill\
+\n$fill\
 \n$character"""
 
 [directory]
