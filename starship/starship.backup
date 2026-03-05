@@ -1,20 +1,5 @@
 format = """
-#[ ](fg:#101010 bg:none)\
-#[ ](fg:#303030 bg:#101010)\
-#[ ](fg:#69491D bg:#303030)\
-#[ ](fg:#101010 bg:#69491D)\
-#[█](fg:#101010 bg:none)\
-#[󰏒 ](fg:#69491D bg:#101010)\
-#[█](fg:#101010 bg:none)\
-#[ ](fg:#101010 bg:#69491D)\
-#[ ](fg:#69491D bg:#303030)\
-#[ ](fg:#303030 bg:#101010)\
-#[ 夜型人間 ](fg:#69491D bg:#101010)\
-#[ ](fg:#101010 bg:#69491D)\
-#[ ](fg:#69491D bg:#303030)\
-#[ ](fg:#303030 bg:#101010)\
-#[ ](fg:#101010 bg:none)\
-\n[ ](fg:#69491D bg:none)\
+[󰟒 ](fg:#69491D bg:none)\
 $directory\
 [](fg:#505050)\
 $git_branch\
@@ -26,9 +11,35 @@ $golang\
 $php\
 $elixir\
 $python\
-$c\
-$java
-$character"""
+$cpp\
+$java\
+\n$fill\
+
+
+\n[ ](fg:#101010 bg:#202020)\
+[ ](fg:#303030 bg:#101010)\
+[ ](fg:#69491D bg:#303030)\
+[ ](fg:#101010 bg:#69491D)\
+[█](fg:#101010 bg:none)\
+[󰏒 ](fg:#69491D bg:#101010)\
+[█](fg:#101010 bg:none)\
+[ ](fg:#101010 bg:#69491D)\
+[ ](fg:#69491D bg:#303030)\
+[ ](fg:#303030 bg:#101010)\
+[ 夜型人間 ](fg:#69491D bg:#101010)\
+[ ](fg:#101010 bg:#69491D)\
+[ ](fg:#69491D bg:#303030)\
+[ ](fg:#303030 bg:#101010)\
+[ 𝔯𝔞𝔫𝔤𝔢𝔯 ](fg:#69491D bg:#101010)\
+[ ](fg:#303030 bg:#101010)\
+[ ](fg:#101010 bg:#303030)\
+[   ](fg:#353535 bg:#101010)\
+[ ](fg:#101010 bg:#303030)\
+[ ](fg:#303030 bg:#101010)\
+[ ](fg:#101010 bg:#202020)\
+\n$fill\
+\n$character
+\n"""
 
 [directory]
 style = '#707070'
@@ -38,19 +49,37 @@ truncation_symbol = ""
 truncate_to_repo = false
 
 [directory.substitutions]
-"/ranger097_nixos_dotfiles" = "dotfiles"
-"Documents" = "DOCUMENTS"
-"Downloads" = "DOWNLOADS"
-"Music" = "MUSIC"
-"Pictures" = "PICTURES"
-"Home" = "HOME"
-"~" = ""
+"/ranger097_nixos_dotfiles" = "  dotfiles "
+"/Projects/go_projects" = "  Projects  go_projects "
+"/Projects/cplusplus_projects" = "  Projects  cplusplus_projects "
+"/Projects/elixir_projects" = "  Projects  elixir_projects "
+"/Projects/java_projects" = "  Projects  java_projects "
+"/Projects/python_projects" = "  Projects  python_projects " 
+"/Projects/rust_projects" = "  Projects  rust_projects "
+"/hypr" = "  hypr" 
 
+
+"Documents" = " 󰣞 documents"
+"Downloads" = " 󰉍 downloads"
+"Music" = " 󱍙 music"
+"Pictures" = " 󰉏 pictures"
+"~" = "home"
+"^/" = ""
+"/" = ""
+
+[direnv]
+disabled = false
+detect_files = ['.envrc']
+allowed_msg = "allowed"
+not_allowed_msg = "not allowed"
+denied_msg = "denied"
+loaded_msg = "loaded"
+unloaded_msg = "not loaded"
 
 [git_branch]
 symbol = ""
-style = '#808080'
-format = '[[ $symbol $branch ](#69491D)]($style)'
+style = "#808080"
+format = '[[on $symbol $branch ](#69491D)]($style)'
 
 [git_status]
 style = '#505050'
@@ -59,47 +88,47 @@ format = '[[($all_status$ahead_behind)](fg:#909090)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [golang]
-symbol = "󰟓"
+symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [elixir]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [java]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [python]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
-[c]
+[cpp]
 symbol = ""
 style = "bg:#000000"
-format = '[[ $symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
+format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [fill]
-symbol = " "
-style = "fg:#B4B4B4" 
+symbol = "─"
+style = "fg:#404040" 
 
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[ $time](fg:#CAAE48)]($style)'
+format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[](fg:#69491D) "
+format = "[󰳟 ](fg:#69491D bg:#none)"

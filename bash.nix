@@ -49,7 +49,7 @@ programs.bash = {
    }
 
 
-   fastfetch   
+   #fastfetch   
    #pokeget random --hide-name
    eval "$(direnv hook bash)"
    eval -- "$(/run/current-system/sw/bin/starship init bash --print-full-init)"
