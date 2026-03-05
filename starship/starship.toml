@@ -13,8 +13,13 @@ $elixir\
 $python\
 $cpp\
 $java\
-\n$fill\
-\n$character\n"""
+\n$fill\n\
+
+[](fg:505050 bg:none)
+$character
+
+
+\n"""
 
 [directory]
 style = '#707070'
@@ -106,4 +111,4 @@ style = "bg:#1d2230"
 format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[](fg:#69491D) "
+format = "[󰏒  夜型  ](fg:#000000 bg:#505050) "
