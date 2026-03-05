@@ -6,6 +6,7 @@ programs.direnv.silent = true;
 programs.firefox.enable = true;
 environment.systemPackages = with pkgs; [
 pipe-viewer
+invidious
 ani-cli
 steam
 blueman
