@@ -51,7 +51,7 @@ unloaded_msg = "not loaded"
 [git_branch]
 symbol = ""
 style = "#CECFD1"
-format = '[[on $symbol $branch ](#69491D)]($style)'
+format = '[[on $symbol $branch ](#CECFD1)]($style)'
 
 [git_status]
 style = '#DBBA95'
@@ -103,4 +103,4 @@ style = "bg:#1d2230"
 format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[󰳟 ](fg:#69491D bg:#none)"
+format = "[󰳟 ](fg:#CECFD1 bg:#none)"
