@@ -115,7 +115,7 @@ format = '[[$symbol ($version) ](fg:#C83C3C bg:#000000)]($style)'
 
 [fill]
 symbol = "─"
-style = "fg:#303030" 
+style = "fg:#202020" 
 
 [time]
 disabled = true
