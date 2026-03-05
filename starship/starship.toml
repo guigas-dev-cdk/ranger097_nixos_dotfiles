@@ -1,5 +1,5 @@
 format = """
-[ ](fg:#707070 bg:none)\
+[ ](fg:#707070 bg:none)\
 $directory\
 [](fg:#505050)\
 $git_branch\
