@@ -1,7 +1,6 @@
 format = """
 [󱂵 ](fg:#707070 bg:none)\
 $directory\
-$fill\
 [](fg:#505050)\
 $git_branch\
 $git_status\
@@ -14,6 +13,7 @@ $elixir\
 $python\
 $cpp\
 $java\
+\n$fill
 
 
 \n[ ](fg:#101010 bg:#202020)\
