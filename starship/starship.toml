@@ -1,4 +1,5 @@
 format = """
+$fill\
 [󱂵 ](fg:#707070 bg:none)\
 $directory\
 [](fg:#505050)\
