@@ -30,9 +30,7 @@ $java\
 [ ](fg:#69491D bg:#303030)\
 [ ](fg:#303030 bg:#101010)\
 [ ](fg:#101010 bg:none)\
-\n$character
-
-
+\n\n$character
 \n"""
 
 [directory]
@@ -125,4 +123,4 @@ style = "bg:#1d2230"
 format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[󰏒  夜型](fg:#000000 bg:#505050) "
+format = "[](fg:#69491D bg:none)"
