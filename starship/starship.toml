@@ -13,9 +13,9 @@ $elixir\
 $python\
 $cpp\
 $java\
-\n$fill\n\
+\n$fill\
 
-[](fg:505050 bg:none)
+\n[ ](fg:505050 bg:none)
 $character
 
 
