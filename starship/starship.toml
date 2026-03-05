@@ -1,14 +1,11 @@
 format = """
-[󰟒 ](fg:#69491D bg:none)\
+[󰟒 ](fg:#DBBA95 bg:none)\
 $directory\
-[](fg:##DBBA95)\
 $git_branch\
 $git_status\
-[](fg:##DBBA95)\
 $nodejs\
 $rust\
 $golang\
-$php\
 $elixir\
 $python\
 $cpp\
@@ -17,7 +14,7 @@ $java\
 \n"""
 
 [directory]
-style = '##DBBA95'
+style = '#CECFD1'
 format = "[$path]($style)"
 truncation_length = 8
 truncation_symbol = ""
@@ -53,7 +50,7 @@ unloaded_msg = "not loaded"
 
 [git_branch]
 symbol = ""
-style = "#DBBA95"
+style = "#CECFD1"
 format = '[[on $symbol $branch ](#69491D)]($style)'
 
 [git_status]
