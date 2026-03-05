@@ -13,7 +13,8 @@ This photo is an example of my __[Rofi](https://github.com/davatorium/rofi)__ co
 <img width="3840" height="2400" alt="2026-03-04-025925_hyprshot" src="https://github.com/user-attachments/assets/bdbeca52-1adf-485a-ab1c-9d1000484f7d" />
 
 This photo is an example of my minimal __[Vscode](https://code.visualstudio.com/)__ config (free of clutter and only contains the tools i actually need).
-<img width="3840" height="2400" alt="2026-03-04-025933_hyprshot" src="https://github.com/user-attachments/assets/3a1a3488-1611-4d58-89e4-1c82a1955452" />
+<img width="3840" height="2400" alt="2026-03-05-062615_hyprshot" src="https://github.com/user-attachments/assets/e8367040-2edf-415e-90e5-16480d8ea276" />
+
 
 This photo is an example of __[Pokeget](https://github.com/talwat/pokeget-rs)__ (very easily disabled, but why would you), it spawns random pokemon pixel art whenever i open a terminal.
 <img width="3840" height="2400" alt="2026-03-04-024600_hyprshot" src="https://github.com/user-attachments/assets/e325f2a0-f22d-4015-8458-7731257f27e7" />
