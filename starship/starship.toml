@@ -12,9 +12,9 @@ $php\
 $elixir\
 $python\
 $cpp\
-$java
-$character
-$fill"""
+$java\
+$fill\
+$character\"""
 
 [directory]
 style = '#707070'
