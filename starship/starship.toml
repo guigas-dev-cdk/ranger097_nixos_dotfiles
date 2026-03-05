@@ -13,9 +13,6 @@ $elixir\
 $python\
 $cpp\
 $java\
-\n$fill\
-
-
 \n$character\
 \n"""
 
