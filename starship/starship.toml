@@ -1,5 +1,5 @@
 format = """
-[󱂵 ](fg:#69491D bg:none)\
+[󱂵 ](fg:#707070 bg:none)\
 $directory\
 [](fg:#505050)\
 $git_branch\
@@ -23,7 +23,7 @@ truncation_symbol = ""
 truncate_to_repo = false
 
 [directory.substitutions]
-"/ranger097_nixos_dotfiles" = "  dotfiles"
+"/ranger097_nixos_dotfiles" = "  dotfiles "
 "/Projects/go_projects" = "  Projects  go_projects "
 "/Projects/cplusplus_projects" = "  Projects  cplusplus_projects "
 "/Projects/elixir_projects" = "  Projects  elixir_projects "
@@ -105,4 +105,4 @@ style = "bg:#1d2230"
 format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[](fg:#69491D) "
+format = "[󱞩 ](fg:#69491D) "
