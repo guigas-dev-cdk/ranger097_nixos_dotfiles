@@ -1,5 +1,5 @@
 format = """
-[︳󱂵 ](fg:#707070 bg:none)\
+[󱂵 ](fg:#707070 bg:none)\
 $directory\
 [](fg:#505050)\
 $git_branch\
@@ -125,4 +125,4 @@ style = "bg:#1d2230"
 format = '[[$time](fg:#CAAE48)]($style)'
 
 [character]
-format = "[=> ](fg:#69491D bg:#none)"
+format = "[ ](fg:#69491D bg:#none)"
