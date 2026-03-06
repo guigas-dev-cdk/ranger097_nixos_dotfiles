@@ -16,6 +16,11 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 0; 
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
+  device = "/dev/nvme1n1p1";
+  # This tells the system to try the TPM before asking for a password
+  crypttabExtraOpts = [ "tpm2-device=auto" ];
+  };
 
   # UPDATED LUKS UUID for your new install
   boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576".device = "/dev/disk/by-uuid/e2e2b2b3-d4e8-4ee7-9e85-329dee72f576";
@@ -29,6 +34,7 @@
   networking.hostName = "pokemon";
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
+  networking.networkmanager.wifi.scanRandMacAddress = true;  
 
   # NVIDIA Setup
   nixpkgs.config.allowUnfree = true;
