@@ -5,7 +5,7 @@ programs.direnv.enable = true;
 programs.direnv.silent = true;
 programs.firefox.enable = true;
 environment.systemPackages = with pkgs; [
-
+sbctl
 ani-cli
 steam
 blueman
