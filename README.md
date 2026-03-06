@@ -1,4 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&repeat=false&width=548&lines=Hello%2C+Welcome+to+my+Nixos+dotfiles+repo.)](https://git.io/typing-svg)<br/>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&color=81A7F7&vCenter=true&width=435&height=20&lines=Hello%2C+Welcome+to+my+dotfiles+repo!!)](https://git.io/typing-svg)
+
 Made for developers who like preconfigured or *"[riced](https://www.reddit.com/r/unixporn/)"* systems, isolated and reproducible developer environments (via direnv), and fun scripts ive made to automate basic system task. As I learn more about Linux, Nixos, Hyprland, Automation, Systems Development and Programming as a whole, I will update this repo periodically.
 (*Quick note, the colors in this flake might seem off because I use hyprsunset, you can easily disable it in hyprland.conf*)
 
@@ -6,11 +7,14 @@ Made for developers who like preconfigured or *"[riced](https://www.reddit.com/r
 This flake has an "__--impure__" flag because it is hardware agnostic.<br/>
 (*aka it will pull your /etc/nixos/hardware-configuration.nix automatically because nixos is [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*)
 
-```
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&color=F72D59&vCenter=true&width=435&height=20&lines=Flake%3A)](https://git.io/typing-svg)
+``` 
 sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#pokemon --impure
 ```
+<br/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&repeat=false&width=548&lines=Screenshots%3A)](https://git.io/typing-svg)<br/>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&color=81A7F7&vCenter=true&width=435&height=20&lines=Screenshots%3A)](https://git.io/typing-svg)
+
 This photo is an example of my __[Rofi](https://github.com/davatorium/rofi)__ config.
 <img width="3840" height="2400" alt="2026-03-04-025925_hyprshot" src="https://github.com/user-attachments/assets/bdbeca52-1adf-485a-ab1c-9d1000484f7d" />
 
@@ -19,10 +23,18 @@ This photo is an example of my minimal __[Vscode](https://code.visualstudio.com/
 
 
 This photo is an example of __[Pokeget](https://github.com/talwat/pokeget-rs)__ (very easily disabled, but why would you), it spawns random pokemon pixel art whenever i open a terminal.
-<img width="3840" height="2400" alt="2026-03-04-024600_hyprshot" src="https://github.com/user-attachments/assets/e325f2a0-f22d-4015-8458-7731257f27e7" />
+<img width="3840" height="2400" alt="2026-03-05-225808_hyprshot" src="https://github.com/user-attachments/assets/c66d3df3-c73a-4f90-b026-38926aeff882" />
+
 
 This is an example of __[Qmmp](https://qmmp.ylsoftware.com/downloads.php)__ and the __[Waybar](https://github.com/Alexays/Waybar)__ module __[Mpris](https://github.com/natsukagami/mpd-mpris)__.
 <img width="3840" height="2400" alt="2026-03-04-024628_hyprshot" src="https://github.com/user-attachments/assets/2b02bd34-a52d-4b8e-953e-13d0f77f7b0b" />
+
+This is an example of my __[Stylus]()__ config. The css is included in the flake.
+<img width="3840" height="2400" alt="2026-03-05-223258_hyprshot" src="https://github.com/user-attachments/assets/ce8903c0-baa8-4cc6-ab2b-e7ffc4e60dfb" />
+<img width="3840" height="2400" alt="2026-03-05-230645_hyprshot" src="https://github.com/user-attachments/assets/46d2cb68-abb2-4232-a9db-fad15a81e292" />
+Here you will see that youtube has grey text and thumbnails unless hovered over(then its full of color). This is because im a night owl and im trying to limit brightness and bluelight. All played videos are normal with no added effects so its a minimal change in functionality beside saving your eyes (*I thought the pixel peepers would apreciate this*). That being said this is disabled by defualt. If you want to achieve this, simply download the userstylus extension in firefox and copy the css i provided in the flake in the "youtube" directory. paste it into the userstylus and Boom!, youre done. Easy.
+
+
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&repeat=false&width=548&lines=Fonts%3A)](https://git.io/typing-svg)<br/>
 [Maple Mono NF](https://github.com/subframe7536/maple-font) is the only font I use. You can easily add more but its so beautiful i use it system wide.
