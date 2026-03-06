@@ -16,14 +16,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 0; 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
-  device = "/dev/nvme1n1p1";
-  # This tells the system to try the TPM before asking for a password
+boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
+  device = "/dev/disk/by-uuid/e2e2b2b3-d4e8-4ee7-9e85-329dee72f576";
+  # This is the "magic" line that makes the TPM work
   crypttabExtraOpts = [ "tpm2-device=auto" ];
-  };
+};
 
-  # UPDATED LUKS UUID for your new install
-  boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576".device = "/dev/disk/by-uuid/e2e2b2b3-d4e8-4ee7-9e85-329dee72f576";
 
   # Hardware Drivers & Kernel Params
   boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
