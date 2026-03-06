@@ -98,10 +98,10 @@
 },
 
 "mpris": {
-    "format": "{player_icon} {dynamic}",
+    "format": "{artist} - {title}",
     "player-icons": {
         "default": "▶",
-        "firefox": ""
+        "firefox": ""
     }
 
 
