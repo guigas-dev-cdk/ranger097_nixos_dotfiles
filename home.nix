@@ -36,7 +36,7 @@ wayland.windowManager.hyprland = {
     monitor = if osConfig.networking.hostName == "jirachi" 
       then [ "eDP-1, 3840x2400@59.9, 0x0, 2.5" ]
       else if osConfig.networking.hostName == "deoxy"
-      then [ "eDP-1, 1920x1080@60.054, 0x0, 1" ]
+      then [ "eDP-1, 1920x1080@60.054, 0x0, 0.8" ]
       else [ ",preferred,auto,1" ];
   };
 
