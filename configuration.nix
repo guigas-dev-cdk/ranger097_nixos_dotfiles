@@ -41,8 +41,6 @@
 
 
 
-
-
   # Wayland / Hyprland fixes
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "nvidia";
