@@ -23,41 +23,44 @@
   };
  
   outputs = { self, nixpkgs, home-manager, lanzaboote, ... }@inputs: {
-   nixosConfigurations.pokemon = nixpkgs.lib.nixosSystem {
-  system = "x86_64-linux";
- specialArgs = { inherit inputs; };
-  modules = [
-  ./configuration.nix
-  home-manager.nixosModules.home-manager
-  
-lanzaboote.nixosModules.lanzaboote
-({ pkgs, lib, ... }: {
-
-
-
- boot.loader.systemd-boot.enable = lib.mkForce false;
-
-            boot.lanzaboote = {
-              enable = true;
-              pkiBundle = "/var/lib/sbctl";
-            };
- })
-
-
-
-
-
+   nixosConfigurations = {
+     deoxy = nixpkgs.lib.nixosSystem {
+     system = "x86_64-linux";
+     specialArgs = { inherit inputs; };
+     modules = [
+   ./hosts/deoxy/hardware-configuration.nix
+   ./configuration.nix
+     home-manager.nixosModules.home-manager
+     lanzaboote.nixosModules.lanzaboote
+    ({ pkgs, lib, ... }: {
+     networking.hostName = "deoxy";
+     boot.loader.systemd-boot.enable = lib.mkForce false;
+     boot.lanzaboote = {
+     enable = true;
+     pkiBundle = "/var/lib/sbctl";
+      };
+   })
 {
 home-manager.useGlobalPkgs = true;
 home-manager.useUserPackages = true;
 home-manager.users.ranger = import ./home.nix;
 home-manager.backupFileExtension = "backup";
-
-
-
-
 }
   ];
-  };
+};  
+
+   jirachi = nixpkgs.lib.nixosSystem {
+   system = "x86_64-linux";
+   specialArgs = { inherit inputs; };
+   modules = [
+ ./hosts/jirachi/hardware-configuration.nix
+ ./configuration.nix
+   home-manager.nixosModules.home-manager
+   ({ ... }: {
+   networking.hostName = "jirachi";
+   })   
+   ];
+};
+};
 };
 }

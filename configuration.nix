@@ -2,7 +2,6 @@
 
 {
   imports = [ 
-    /etc/nixos/hardware-configuration.nix
     ./cosmic.nix
     ./hyprland.nix
     ./packages.nix
@@ -16,11 +15,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 0; 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
-  device = "/dev/disk/by-uuid/e2e2b2b3-d4e8-4ee7-9e85-329dee72f576";
-  # This is the "magic" line that makes the TPM work
-  crypttabExtraOpts = [ "tpm2-device=auto" ];
-};
 
 
   # Hardware Drivers & Kernel Params
@@ -29,7 +23,6 @@ boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
   boot.kernelParams = [ "nvidia_drm.modeset=1" "nvidia_drm.fbdev=1" ];
 
   # Networking
-  networking.hostName = "pokemon";
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.UTF-8";
   networking.networkmanager.wifi.scanRandMacAddress = true;  
@@ -44,38 +37,7 @@ boot.initrd.luks.devices."luks-e2e2b2b3-d4e8-4ee7-9e85-329dee72f576" = {
     modesetting.enable = true;
     open = true; 
     nvidiaSettings = true;
-    prime = {
-      offload.enable = true;
-      offload.enableOffloadCmd = true;
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:1:0:0";
-    };
   };
-
-
-
-
-services.pipewire.wireplumber.extraConfig."10-disable-internal-mic" = {
-  "monitor.alsa.rules" = [
-    {
-      matches = [
-        {
-          # Targeted match for your specific internal SoundWire microphone
-          "node.name" = "alsa_input.pci-0000_00_1f.3-platform-sof_sdw.HiFi__Mic__source";
-        }
-      ];
-      actions = {
-        update-props = {
-          "node.disabled" = true;
-        };
-      };
-    }
-  ];
-};
-
-
-
-
 
 
 
