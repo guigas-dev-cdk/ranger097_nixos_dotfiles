@@ -56,9 +56,28 @@ home-manager.backupFileExtension = "backup";
  ./hosts/jirachi/hardware-configuration.nix
  ./configuration.nix
    home-manager.nixosModules.home-manager
-   ({ ... }: {
+  lanzaboote.nixosModules.lanzaboote
+   ({ pkgs, lib, ... }: {
    networking.hostName = "jirachi";
-   })   
+   boot.loader.systemd-boot.enable = lib.mkForce false;
+   boot.lanzaboote = {
+   enable = true;
+   pkiBundle = "/var/lib/sbctl";
+   };   
+})  
+
+  {
+   home-manager.useGlobalPkgs = true;
+   home-manager.useUserPackages = true;
+   home-manager.users.ranger = import ./home.nix;
+   home-manager.backupFileExtension = "backup";
+   }
+
+
+
+
+
+
    ];
 };
 };
