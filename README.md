@@ -76,6 +76,10 @@ In another terminal or tab lets run a few commands.
 ```
 sudo blkid -t TYPE=crypto_LUKS
 ```
+and or 
+```
+lsblk -f
+```
 My ID is "luks-7c42da92-5364-41d0-900d-68c9410d94e3"<br/>
 Delete my "luks ID" (*aka UUID when you run the command above*) and paste yours into the hardware-configuration.nix file in the highlighted locations displayed in the screenshot.
 *__IMPORTANT__: Notice i have __2__ luks devices. Big chance you have __1__. If so great. If not, add one.
