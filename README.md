@@ -4,7 +4,7 @@ Made for developers who like very secure (secureboot, TPM, ) or *"[riced](https:
 (*Quick note, the colors in this flake might seem off because I use hyprsunset, you can easily disable it in hyprland.conf*)
 
 ## Instructions:
-This flake is hardware agnostic (*because nixos is [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*) ,but there are a few steps you need to take in order to successfully use this flake.
+This flake is hardware agnostic (*because nixos is [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*), but there are a few steps you need to take in order to successfully use this flake.
 
 ## 1. Secure Boot (*aka lanazaboote*).
 The first step you must take is going to your bios settings and turning on secure boot. # __IMPORTANT!__ : You must make sure it is in "__AUDITED__" mode and __NOT__ in __"DEPLOYED"__ mode. <br/>
