@@ -113,7 +113,7 @@ We have made alot of changes and now its time to save those changes to your Gith
 git add .
 ```
 ```
-git commit -m "say whatever you want here"
+git commit -m "added hardware config"
 ```
 ```
 git push origin main
