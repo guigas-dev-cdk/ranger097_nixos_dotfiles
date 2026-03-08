@@ -15,18 +15,12 @@ When you are in the bios settings, make sure if you have secure boot keys (*just
 ## 2. __Resetting the keys is crucial__. 
 Step 2 is to make sure you did step 1 (*Actually*). 
 
-## 3. Clone my flake to your home-directory.
+## 3. Fork my flake.
+Click fork button above and make a fork of the flake (star this repo too since we already clicking).
+Now we will clone that fork.
 *If you are on a fresh install you need to install git first*
 ```
-git clone https://github.com/ranger097/ranger097_nixos_dotfiles.git
-```
-
-## 3.1 Hardware-configuration.nix.
-Before you run the flake you need to set a host.<br/>
-Firstly you need to make a branch for this flake.<br/>
-Replace the "yourHostNameHere" with the actual host name of your system. (*If you are a real one you will name it after a pokemon, but not everyone is a nerd like me.*)
-```
-git checkout -b yourHostNameHere
+git clone THE-LINK-TO-YOUR-FORK.
 ```
 
 ## 4. Hosts.
