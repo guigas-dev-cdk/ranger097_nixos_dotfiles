@@ -141,6 +141,8 @@ sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#deox
 ```
 for my other system.
 
+## Features and Ricing.
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&color=81A7F7&vCenter=true&width=435&height=20&lines=Screenshots%3A)](https://git.io/typing-svg)
 
 This photo is an example of my __[Rofi](https://github.com/davatorium/rofi)__ config.
