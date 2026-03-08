@@ -200,4 +200,4 @@ The cursor depicted in the screenshots above is a __[Pokemon Cursor](https://sto
 * Hyprland settings app (*written in rust*).
 * Waybar toggle script (*written in python*).
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&color=F79B1F&multiline=true&repeat=false&width=435&height=121&lines=I+really+hope+you+enjoy+this+Flake.;Please+leave+a+Star+and+share+with+;your+friends+or+colleagues.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&weight=600&size=25&duration=4&pause=1000&color=F7D933&vCenter=true&multiline=true&repeat=false&width=532&height=130&lines=Thank+you+so+much+for+the+support.;I+really+hope+you+enjoy+this+flake.;Please+leave+a+star+and+share+this;flake+with+friends+or+colleagues.)](https://git.io/typing-svg)
