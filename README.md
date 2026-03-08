@@ -113,7 +113,7 @@ git add .
 git commit -m "say whatever you want here"
 ```
 ```
-git push origin yourHostNameHere
+git push origin main
 ```
 ```
 sudo nixos-rebuild switch --flake .#yourHostNameHere
