@@ -47,7 +47,7 @@ Now you should be inside of the "ranger097_nixos_dotfiles/hosts/" directory.
 You should a have 3 subdirectories deoxy, jirachi, and the directory named after your host (*or pokemon*).
 Use this command to paste the "hardware-configuration.nix" from deoxy to your host directory. (*Change "yourHostNameHere" to your actual hostname.*)
 ```
-cp deoxy/hardware-configuration.nix yourHostNameHere
+cp etc/nixos/hardware-configuration.nix yourHostNameHere
 ```
 
 ## 4.2 Double Check
@@ -57,7 +57,16 @@ If so lets proceed.
 
 ## 4.2 hardware-configuration.nix
 Lets open your hardware-configuration.nix.
-First lets get your "luks ID".<br/>
+```
+sudo nano hardware-configuration.nix
+```
+Paste this in your hardware-configuration.nix
+```
+ boot.initrd.luks.devices."PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE." = {
+     device = "/dev/disk/by-uuid/PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE.";
+     crypttabExtraOpts = [ "tpm2-device=auto" ];
+  };
+```
 Look closely in the hardware-configuration.nix where it says:<br/> 
 "boot.initrd.luks.devices"<br/>
 and on the line below that<br/>
@@ -67,7 +76,11 @@ In another terminal or tab lets run a few commands.
 ```
 sudo blkid -t TYPE=crypto_LUKS
 ```
-
+My ID is "luks-7c42da92-5364-41d0-900d-68c9410d94e3"<br/>
+Delete my "luks ID" (*aka UUID when you run the command above*) and paste yours into the hardware-configuration.nix file in the highlighted locations displayed in the screenshot.
+*__IMPORTANT__: Notice i have __2__ luks devices. Big chance you have __1__. If so great. If not, add one.
+<img width="3840" height="2400" alt="2026-03-08-012218_hyprshot" src="https://github.com/user-attachments/assets/0b63ea00-f57c-49ba-bae5-f2438049bc52" />
+The screenshot above is how i have configured my second device if you needed too as well.
 
 
 
