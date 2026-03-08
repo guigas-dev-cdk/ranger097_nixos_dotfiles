@@ -3,12 +3,27 @@
 Made for developers who like very secure (secureboot, TPM, ) or *"[riced](https://www.reddit.com/r/unixporn/)"* systems, isolated and reproducible developer environments (via direnv), and fun scripts ive made to automate basic system task. As I learn more about Linux, Nixos, Hyprland, Automation, Systems Development and Programming as a whole, I will update this repo periodically.
 (*Quick note, the colors in this flake might seem off because I use hyprsunset, you can easily disable it in hyprland.conf*)
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&width=435&lines=Instructions%3A)](https://git.io/typing-svg)
+
 This flake has is hardware agnostic (*because nixos is [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*) ,but there is a few steps you need to take in order to successfully use this flake.
 
 ## 1. Secure Boot (*aka lanazaboote*).
-The first step you must take is going to your bios settings and turning on secure boot. # __IMPORTANT!__ : You must make sure it is in "__AUDITED__" mode and __NOT__ in __"DEPLOYED"__ mode.
+The first step you must take is going to your bios settings and turning on secure boot. # __IMPORTANT!__ : You must make sure it is in "__AUDITED__" mode and __NOT__ in __"DEPLOYED"__ mode. <br/>
+
+### 1.1 Secure Boot keys.
+When you are in the bios settings, make sure if you have secure boot keys (*just do this step anyway*) to clear them, reset them, delete them, etc.<br/>
+__Resetting the keys is crucial__. 
+
+
+
 
 ## 2. Clone my flake to your home-directory.
+*If you are on a fresh install you need to install git first*
+```
+git clone https://github.com/ranger097/ranger097_nixos_dotfiles.git
+```
+
+
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&pause=1000&color=F72D59&vCenter=true&width=435&height=20&lines=Flake%3A)](https://git.io/typing-svg)
