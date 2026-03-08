@@ -47,7 +47,7 @@ Now you should be inside of the "ranger097_nixos_dotfiles/hosts/" directory.
 You should have 3 sub-directories deoxy, jirachi, and the directory named after your host (*or pokemon*).
 Use this command to paste the "hardware-configuration.nix" from your system to your host directory. (*Change "yourHostNameHere" to your actual hostname.*)
 ```
-sudo cp etc/nixos/hardware-configuration.nix yourHostNameHere
+sudo cp /etc/nixos/hardware-configuration.nix yourHostNameHere/
 ```
 
 ## 4.2 Double Check
