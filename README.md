@@ -100,8 +100,16 @@ Okay look at the screenshot below.
 <img width="3840" height="2400" alt="2026-03-08-031149_hyprshot" src="https://github.com/user-attachments/assets/c3f2b8b0-84d0-47d2-8962-666c0abf3a17" />
 Notice how "deoxy" is written 3 times in the flake. Remove the name "deoxy" and write in your hostname in all 3 locations in the highlighted area in the screenshot.
 
-## 5.1 Git.
+
+
+## 5.2 Keys
 Save the flake.nix and exit the file back to the terminal. 
+We are finally at the point were you can setup secure boot keys
+```
+sudo sbctl enroll-keys --microsoft
+```
+
+## 5.2 Git.
 Make sure you are still in the ~/ranger097_nixos_dotfiles directory.
 We have made alot of changes and now its time to save those changes to your Github branch.
 ```
