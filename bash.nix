@@ -75,7 +75,7 @@ programs.bash = {
    nix flake update
    }
 
-   wal -i /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/wallhaven-d85gjg.jpg > /dev/null/ 2>&1 
+   wal -i /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/wallhaven-d85gjg.jpg &> /dev/null 
    #fastfetch   
    pokeget random --hide-name
    eval "$(direnv hook bash)"
