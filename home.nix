@@ -114,7 +114,7 @@ layout = dwindle
 
 #WINDOW_SETTINGS_START
 decoration {
-rounding = 15
+rounding = 0
 rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
@@ -133,12 +133,12 @@ scale = 0.99
 #BLUR
 blur {
 enabled = true
-size = 3
+size = 2
 passes = 4
 contrast = 1
 vibrancy = -0.5
 vibrancy_darkness = -0.5
-brightness = 1.5
+brightness = 2.5
 noise = 0.0
 popups = true
 }
