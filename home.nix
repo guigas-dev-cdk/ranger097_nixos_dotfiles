@@ -114,7 +114,7 @@ layout = dwindle
 
 #WINDOW_SETTINGS_START
 decoration {
-rounding = 20
+rounding = 12
 rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
@@ -124,10 +124,10 @@ shadow {
 enabled = false
 range = 1
 render_power = 2
-color = rgba(30,30,30,1)
-offset = 0 0
-sharp = true
-scale = 1.0
+color = rgba(0,0,0,0.5)
+offset = -3 8
+sharp = false
+scale = 0.99
 }
 
 #BLUR
