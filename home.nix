@@ -47,7 +47,7 @@ ecosystem:no_update_news = true
 #AUTOSTART
 exec-once = hyprlock
 exec-once = swww-daemon
-exec-once = swww img /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/1120406.jpg
+exec-once = /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/1116508.jpg
 #exec-once = LD_LIBRARY_PATH=/run/opengl-driver/lib mpvpaper -o "no-audio --loop-playlist --panscan=1.0 hwdec=auto" eDP-1 /home/ranger/Videos/wallpapers/guweiz.mp4
 exec-once = waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css
 exec-once = waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
@@ -136,9 +136,9 @@ enabled = true
 size = 4
 passes = 3
 contrast = 1
-vibrancy = 1
-vibrancy_darkness = 1
-brightness = 1
+vibrancy = 0.8
+vibrancy_darkness = 0.8
+brightness = 1.5
 noise = 0.0
 popups = true
 }
