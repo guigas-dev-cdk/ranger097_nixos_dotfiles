@@ -134,7 +134,7 @@ scale = 0.99
 blur {
 enabled = true
 size = 2
-passes = 3
+passes = 4
 contrast = 1
 vibrancy = -1.0
 vibrancy_darkness = -1.0
