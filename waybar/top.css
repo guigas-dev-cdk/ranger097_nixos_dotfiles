@@ -2,7 +2,7 @@
 
 window#waybar {
 background: linear-gradient(0deg,rgba(0,0,0,1));
-border-bottom: 1px solid rgba(100,100,100,1);
+border-bottom: 0px solid rgba(100,100,100,1);
 }
 
 #window,
@@ -22,7 +22,7 @@ margin-top: 3px;
 margin-bottom: 3px;
 font-family: Maple Mono NF;
 font-size: 12px;
-font-weight: 200;
+font-weight: 400;
 background: linear-gradient(rgba(0,0,0,0));
 color:#606060;
 margin-right: 10px;
