@@ -29,19 +29,23 @@ in
     ".config/wlogout".source = ./wlogout;
   };
 
+wayland.windowManager.hyprland.systemd.variables = ["--all"];
 wayland.windowManager.hyprland = {
   enable = true;
   
   settings = {
-    monitor = if osConfig.networking.hostName == "jirachi" 
-      then [ "eDP-1, 3840x2400@59.99400, 0x0, 3" ]
-      else if osConfig.networking.hostName == "deoxy"
-      then [ "eDP-1, 1920x1080@60.054, 0x0, 1.5" ]
-      else [ ",preferred,auto,1" ];
+  monitors = [ "eDP-1, 3840x2400@59.99400, 0x0, 3" ];
+
+
+   # monitor = if osConfig.networking.hostName == "jirachi" 
+   #   then [ "eDP-1, 3840x2400@59.99400, 0x0, 3" ]
+   #   else if osConfig.networking.hostName == "deoxy"
+   #   then [ "eDP-1, 1920x1080@60.054, 0x0, 1.5" ]
+   #   else [ ",preferred,auto,1" ];
   };
 
   extraConfig = ''
- # source = ~/.config/hypr/hyprland.conf
+  # source = ~/.config/hypr/hyprland.conf
   '';
 
 };
