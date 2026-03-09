@@ -136,9 +136,9 @@ enabled = true
 size = 4
 passes = 3
 contrast = 1
-vibrancy = 0.8
-vibrancy_darkness = 0.8
-brightness = 1.5
+vibrancy = 0
+vibrancy_darkness = 0
+brightness = 1
 noise = 0.0
 popups = true
 }
