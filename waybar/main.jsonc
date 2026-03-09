@@ -47,11 +47,9 @@
             "(.*)nm-connection-editor(.*)": "WIFI ワイファイ",
             "(.*)Kvantum Manager(.*)": "KVANTUM 主題",
             "(.*)Foliate(.*)": "BOOKS もと",
-            " ": "RANGER097 レンジャー",
-
+            " ": "RANGER097 レンジャー"
         }
 },
-
 
 "hyprland/workspaces": {
 "format": "{icon}", 
@@ -104,9 +102,6 @@
         "default": "▶",
         "firefox": ""
     }
-
-
-
 
 },
     "custom/vpn_ip": {
