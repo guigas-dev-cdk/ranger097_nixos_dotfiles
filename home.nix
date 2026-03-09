@@ -102,10 +102,10 @@ col.active_border = rgba(100,100,100,1) rgba(223,190,152,1) 90deg
 col.inactive_border = rgba(100,100,100,1) rgba(223,190,152,1) 90deg
 
 #BORDER_ANIMATION
-animations {
-bezier = linear, 0.0, 0.0, 0.0, 0.0
-animation = borderangle, 1, 200, linear, loop
-}
+#animations {
+#bezier = linear, 0.0, 0.0, 0.0, 0.0
+#animation = borderangle, 1, 200, linear, loop
+#}
 
 #ALTERNATIVE
 resize_on_border = true
