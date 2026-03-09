@@ -88,15 +88,15 @@ permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
 #SETTINGS_START
 general {
 #GAPS
-gaps_in = 3
+gaps_in = 4
 gaps_out = 30
-border_size = 1
+border_size = 2
 
 #BORDER
 #col.active_border = rgba(249,238,195,1)
 #col.inactive_border = rgba(249,238,195,1)
-col.active_border = rgba(40,40,40,1)
-col.inactive_border = rgba(40,40,40,1)
+col.active_border = rgba(0,0,0,1)
+col.inactive_border = rgba(0,0,0,1)
 
 #BORDER_ANIMATION
 #animations {
@@ -122,22 +122,22 @@ inactive_opacity = 1.0
 #SHADOW
 shadow {
 enabled = true
-range = 5
+range = 2
 render_power = 2
-color = rgba(0,0,0,0.4)
-offset = -3 4
-sharp = false
-scale = 0.99
+color = rgba(0,0,0,1)
+offset = 0 0
+sharp = true
+scale = 1.0
 }
 
 #BLUR
 blur {
 enabled = true
-size = 2
+size = 3
 passes = 5
 contrast = 1.0
-vibrancy = -1.2
-vibrancy_darkness = -1.2
+vibrancy = -1.3
+vibrancy_darkness = -1.3
 brightness = 1.4
 noise = 0.0
 popups = true
