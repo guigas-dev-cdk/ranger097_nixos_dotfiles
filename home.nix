@@ -40,9 +40,9 @@ wayland.windowManager.hyprland = {
       else [ ",preferred,auto,1" ];
   };
 
- # extraConfig = ''
+  extraConfig = ''
  # source = ~/.config/hypr/hyprland.conf
- # '';
+  '';
 
 };
 
