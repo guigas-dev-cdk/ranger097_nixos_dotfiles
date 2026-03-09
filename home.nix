@@ -52,7 +52,7 @@ exec-once = swww img /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/112
 #exec-once = LD_LIBRARY_PATH=/run/opengl-driver/lib mpvpaper -o "no-audio --loop-playlist --panscan=1.0 hwdec=auto" eDP-1 /home/ranger/Videos/wallpapers/guweiz.mp4
 #exec-once = waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css
 #exec-once = waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
-exec-once = waybar -c ~/ranger097_nixos_dotfiles/waybar/main.json -s ~/ranger097_nixos_dotfiles/waybar/main.css
+exec-once = waybar -c ~/ranger097_nixos_dotfiles/waybar/main.jsonc -s ~/ranger097_nixos_dotfiles/waybar/main.css
 exec-once = protonvpn-app
 exec-once = hypridle
 exec-once = hyprsunset
@@ -231,7 +231,7 @@ bind = SUPER, B, exec, librewolf
 bind = SUPER, D, exec, dolphin
 bind = SUPER, C, exec, code
 bind = SUPER, F, fullscreenstate, 2
-bind = SUPER, Space, exec, waybar -c ~/ranger097_nixos_dotfiles/waybar/main.json -s ~/ranger097_nixos_dotfiles/waybar/main.css
+bind = SUPER, Space, exec, waybar -c ~/ranger097_nixos_dotfiles/waybar/main.jsonc -s ~/ranger097_nixos_dotfiles/waybar/main.css
 bind = SUPER, X, exec, pkill waybar
 bind = SUPER, V, exec, freetube
 bind = SUPER, H, exec, hyprshot -m output -m eDP-1
