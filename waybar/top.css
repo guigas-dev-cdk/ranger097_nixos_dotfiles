@@ -24,7 +24,7 @@ font-family: Maple Mono NF;
 font-size: 9px;
 font-weight: 400;
 background: linear-gradient(rgba(0,0,0,1));
-color:#DFBE98;
+color:#606060;
 margin-right: 0px;
 border-radius: 0px;
 border: 0px solid #303030;
@@ -67,6 +67,8 @@ margin-left: 2px;
 
 #mpris {
 margin-right: 0px;
+padding-left:20px;
+padding-right:20px;
 }
 
 #custom-vpn_ip {
