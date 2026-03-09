@@ -36,13 +36,12 @@ wayland.windowManager.hyprland.systemd.variables = ["--all"];
 wayland.windowManager.hyprland = {
   enable = true;
   extraConfig = ''
-  source = ~/.config/hypr/hyprland.conf
-  '';  
-
-
-
-  settings = {
-  monitor = [ "eDP-1, 3840x2400@59.99400, 0x0, 3" ];
+  # source = ~/.config/hypr/hyprland.conf
+  source = if osConfig.networking.hostName == "jirachi" 
+  then ["~/ranger097_nixos_dotfiles/hosts/jirachi/monitor.conf"]
+  else if osConfig.networking.hostName == "deoxy"
+  then ["~/ranger097_nixos_dotfiles/hosts/deoxy/monitor.conf"]
+ '';  
 
 
    # monitor = if osConfig.networking.hostName == "jirachi" 
