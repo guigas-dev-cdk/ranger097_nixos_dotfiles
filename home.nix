@@ -52,7 +52,6 @@ wayland.windowManager.hyprland = {
   };
 
 
-};
 
 
 
