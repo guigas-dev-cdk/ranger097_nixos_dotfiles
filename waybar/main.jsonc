@@ -10,13 +10,13 @@
     "margin-right": 0,
 
     "modules-left": [
-     "custom/spacer",
-     "custom/left-bracket",
+    // "custom/spacer",
+    // "custom/left-bracket",
      "hyprland/window",
-     "custom/right-bracket",
-     "custom/left-bracket",
-     "hyprland/workspaces",
-     "custom/right-bracket"
+    // "custom/right-bracket",
+    // "custom/left-bracket",
+     "hyprland/workspaces"
+    // "custom/right-bracket"
     ],
     "modules-center": [
     "custom/left-bracket",
@@ -24,16 +24,16 @@
     "custom/right-bracket"
     ],
     "modules-right": [
-        "custom/left-bracket",
+       // "custom/left-bracket",
         "custom/vpn_ip",
-        "custom/right-bracket",
-        "custom/left-bracket",
+       // "custom/right-bracket",
+      //  "custom/left-bracket",
         "clock",
-        "custom/right-bracket",
-        "custom/left-bracket",
-        "battery",
-        "custom/right-bracket",
-        "custom/spacer"
+      //  "custom/right-bracket",
+       // "custom/left-bracket",
+        "battery"
+       // "custom/right-bracket",
+       // "custom/spacer"
     ],
 
     "hyprland/window": {
