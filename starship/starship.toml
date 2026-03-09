@@ -1,5 +1,5 @@
 format = """
-[󰟒 ](fg:#DBBA95 bg:none)\
+[󰟒 ](fg:#bcbcbc bg:none)\
 $directory\
 $git_branch\
 $git_status\
@@ -50,12 +50,12 @@ unloaded_msg = "not loaded"
 
 [git_branch]
 symbol = ""
-style = "#CECFD1"
-format = '[[on $symbol $branch ](#CECFD1)]($style)'
+style = "#bcbcbc"
+format = '[[on $symbol $branch ](#bcbcbc)]($style)'
 
 [git_status]
-style = '#DBBA95'
-format = '[[($all_status$ahead_behind)](fg:#909090)]($style)'
+style = '#bcbcbc'
+format = '[[($all_status$ahead_behind)](fg:#bcbcbc]($style)'
 
 [nodejs]
 symbol = ""
