@@ -41,7 +41,7 @@ wayland.windowManager.hyprland = {
   };
 
   extraConfig = ''
-    source = ~/ranger097_nixos_dotfiles/hypr/hyprland.conf
+    source = ~/.config/hypr/hyprland.conf
   '';
 };
 
