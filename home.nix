@@ -114,14 +114,14 @@ layout = dwindle
 
 #WINDOW_SETTINGS_START
 decoration {
-rounding = 12
+rounding = 5
 rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
 
 #SHADOW
 shadow {
-enabled = false
+enabled = true
 range = 1
 render_power = 2
 color = rgba(0,0,0,0.5)
@@ -138,7 +138,7 @@ passes = 4
 contrast = 1.0
 vibrancy = 0
 vibrancy_darkness = 0
-brightness = 1.4
+brightness = 1.6
 noise = 0.0
 popups = true
 }
