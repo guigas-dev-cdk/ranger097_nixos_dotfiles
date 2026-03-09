@@ -1,8 +1,8 @@
 /* ranger097 */
 
 window#waybar {
-background: linear-gradient(0deg,rgba(100,100,100,1), rgba(223,190,152,1));
-border: 0px solid rgba(70,70,70,1);
+background: linear-gradient(0deg,rgba(0,0,0,1));
+border: 2px solid rgba(100,100,100,1);
 }
 
 #window,
