@@ -1,26 +1,39 @@
 // -*- mode: jsonc -*-
 {
+    "position": "top",
     "layer": "top",
     "height": 5,
     "spacing": 0,
-    "margin-top": 20,
-    "margin-bottom": 5,
-    "margin-left": 20,
-    "margin-right": 20,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
 
     "modules-left": [
-        "hyprland/window",
+    // "custom/spacer",
+    // "custom/left-bracket",
+     "hyprland/window",
+    // "custom/right-bracket",
+    // "custom/left-bracket",
      "hyprland/workspaces"
+    // "custom/right-bracket"
     ],
     "modules-center": [
-        "mpris"
-//        "custom/qmmp"
+  //  "custom/left-bracket",
+    "mpris"
+  //  "custom/right-bracket"
     ],
     "modules-right": [
-        "custom/spacerRight",
+       // "custom/left-bracket",
         "custom/vpn_ip",
+       // "custom/right-bracket",
+      //  "custom/left-bracket",
         "clock",
+      //  "custom/right-bracket",
+       // "custom/left-bracket",
         "battery"
+       // "custom/right-bracket",
+       // "custom/spacer"
     ],
 
     "hyprland/window": {
@@ -46,11 +59,9 @@
             "(.*)nm-connection-editor(.*)": "WIFI ワイファイ",
             "(.*)Kvantum Manager(.*)": "KVANTUM 主題",
             "(.*)Foliate(.*)": "BOOKS もと",
-            " ": "RANGER097 レンジャー",
-
+            " ": "RANGER097 レンジャー"
         }
 },
-
 
 "hyprland/workspaces": {
 "format": "{icon}", 
@@ -67,7 +78,7 @@
         "10": "十",
     },
    "persistent-workspaces": {
-        "*": [1,2,3,4,5,6,7,8,9,10],
+        "*": [1,2,3,4,5],
         "HDMI-A-1": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
     }
 },
@@ -103,9 +114,6 @@
         "default": "▶",
         "firefox": ""
     }
-
-
-
 
 },
     "custom/vpn_ip": {
