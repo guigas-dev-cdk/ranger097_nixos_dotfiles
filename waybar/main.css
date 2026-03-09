@@ -1,7 +1,7 @@
 /* ranger097 */
 
 window#waybar {
-background: linear-gradient(0deg,rgba(0,0,0,1));
+background: linear-gradient(0deg,rgba(0,0,0,0.7));
 border-top: 1px solid rgba(100,100,100,1);
 }
 
@@ -18,16 +18,16 @@ padding-left: 3px;
 padding-right: 3px;
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 8px;
-margin-bottom: 8px;
+margin-top: 3px;
+margin-bottom: 3px;
 font-family: Maple Mono NF;
 font-size: 10px;
 font-weight: 400;
-background: linear-gradient(rgba(0,0,0,0));
+background: linear-gradient(rgba(20,20,20,1));
 color:#606060;
 margin-right: 0px;
-border-radius: 0px;
-border: 1px solid #303030;
+border-radius: 10px;
+border: 0px solid #303030;
 box-shadow: none;
 text-shadow: none;
 }
@@ -55,12 +55,12 @@ margin-right: 0px;
 
 #battery {
 
-margin-right: 5px;
+margin-right: 20px;
 }
 
 
 #window {
-margin-left: 5px;
+margin-left: 20px;
 }
 
 

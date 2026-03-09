@@ -19,9 +19,9 @@
     // "custom/right-bracket"
     ],
     "modules-center": [
-    "custom/left-bracket",
-    "mpris",
-    "custom/right-bracket"
+  //  "custom/left-bracket",
+    "mpris"
+  //  "custom/right-bracket"
     ],
     "modules-right": [
        // "custom/left-bracket",
