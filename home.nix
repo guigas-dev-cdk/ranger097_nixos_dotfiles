@@ -21,9 +21,9 @@ in
   };
 
   home.file = {
-    ".config/hypr/hypridle.conf".source = ./hypr/hypridle.conf
-    ".config/hypr/hyprlock.conf".source = ./hypr/hyprlock.conf
-    ".config/hypr/hyprsunset.conf".source = ./hypr/hyprsunset.conf
+    ".config/hypr/hypridle.conf".source = ./hypr/hypridle.conf;
+    ".config/hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
+    ".config/hypr/hyprsunset.conf".source = ./hypr/hyprsunset.conf;
     ".config/waybar".source = ./waybar; 
     ".config/ghostty".source = ./ghostty;
     ".config/starship.toml".source = ./starship/starship.toml;
