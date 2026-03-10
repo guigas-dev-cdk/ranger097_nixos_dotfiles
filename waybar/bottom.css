@@ -20,9 +20,9 @@ border-top: 2px solid #000000;
 #custom-dolphin,
 #custom-volume {
 padding-top: 2px;
-padding-bottom: 2px;
-padding-left: 10px;
-padding-right: 10px;
+padding-bottom: 1px;
+padding-left: 15px;
+padding-right: 15px;
 margin-top: 1px;
 margin-bottom: 1px;
 margin-left: 2px;
@@ -30,7 +30,7 @@ margin-right: 2px;
 border: 1px solid rgba(60,60,60,0);
 border-radius: 2px;
 font-family: Maple Mono NF;
-font-size: 10px;
+font-size: 9px;
 font-weight: 300;
 background: linear-gradient(rgba(0,0,0,0.0));
 color: #bcbcbc;
