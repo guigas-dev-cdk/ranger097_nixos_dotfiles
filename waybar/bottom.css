@@ -23,8 +23,8 @@ padding-top: 2px;
 padding-bottom: 1px;
 padding-left: 15px;
 padding-right: 15px;
-margin-top: 1px;
-margin-bottom: 1px;
+margin-top: 2px;
+margin-bottom: 3px;
 margin-left: 2px;
 margin-right: 2px;
 border: 1px solid rgba(60,60,60,0);
@@ -55,15 +55,15 @@ color: rgba(200,60,60,1);
 #custom-spacerRight {
 border-radius: 0px 0px 0px 0px;
 background: linear-gradient(rgba(0,0,0,1));
-padding-right:32px;
-margin-left:5px;
+padding-right:0px;
+margin-left:0px;
 }
 
 #custom-spacerLeft {
 border-radius: 0px 0px 0px 0px;
 background: linear-gradient(rgba(0,0,0,1));
-padding-left:36px;
-margin-left:3px;
+padding-left:0px;
+margin-left:0px;
 }
 
 #custom-power {
