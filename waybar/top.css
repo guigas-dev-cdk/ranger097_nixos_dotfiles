@@ -18,8 +18,8 @@ padding-left: 0px;
 padding-right: 20px;
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 3px;
-margin-bottom: 3px;
+margin-top: 4px;
+margin-bottom: 4px;
 font-family: Maple Mono NF;
 font-size: 10px;
 font-weight: 500;
@@ -33,7 +33,7 @@ text-shadow: none;
 }
 
 #window:hover,
-#custom-qmmp:hover,
+#mpris:hover,
 #custom-right-bracket:hover,
 #custom-left-bracket:hover,
 #workspaces button:hover,
@@ -84,6 +84,7 @@ margin-left: 0px;
 background: linear-gradient(rgba(32,32,32,0));
 border-radius: 0px;
 border: 0px solid rgba(0,0,0,0);
+box-shadow: none;
 }
 
 #workspaces button {
@@ -105,17 +106,39 @@ padding-left: 0px;
 padding-right: 0px;
 }
 
-#workspaces:hover { background-color: rgba(0,0,0,0); color: #000000; }
-#workspaces button:hover { background-color: rgba(0,0,0,1); color: rgba(200,60,60,1); }
-#workspaces button.active { background-color: rgba(0,0,0,0);
+#workspaces:hover { 
+background-color: rgba(0,0,0,0); 
+color: #000000; 
+box-shadow: none;
+}
+
+#workspaces button:hover { 
+background-color: rgba(0,0,0,0); 
+color: rgba(200,60,60,1); 
+box-shadow: none;
+}
+
+#workspaces button.active { 
+background-color: rgba(0,0,0,0);
 color: rgba(120,120,120,1); 
 box-shadow: none;
 }
 
-#workspaces button.urgent { background-color: rgba(0,0,0,0); 
-color:#000000; }
-#mode { background-color: rgba(0,0,0,0); }
-#mode:hover {background-color: rgba(0,0,0,1);}
+#workspaces button.urgent { 
+background-color: rgba(0,0,0,0); 
+color:#000000; 
+box-shadow: none;
+}
+
+#mode { 
+background-color: rgba(0,0,0,0); 
+}
+
+#mode:hover {
+background-color: rgba(0,0,0,0);
+box-shadow: none;
+}
+
 /*#window { margin: 0 0px; }*/
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces { margin-left: 0px; }
