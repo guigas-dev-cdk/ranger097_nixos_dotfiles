@@ -88,8 +88,8 @@ permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
 #SETTINGS_START
 general {
 #GAPS
-gaps_in = 4
-gaps_out = 8
+gaps_in = 3
+gaps_out = 30
 border_size = 2
 
 #BORDER
@@ -114,7 +114,7 @@ layout = dwindle
 
 #WINDOW_SETTINGS_START
 decoration {
-rounding = 5
+rounding = 0
 rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
@@ -295,13 +295,13 @@ bindl = , XF86AudioPrev, exec, playerctl previous
 #KEYBINDING_SETTINGS_END
 
 #WINDOW_RULE_SETTINGS_START
-windowrule = match:class code, opacity 0.95
+windowrule = match:class code, opacity 1.0
 windowrule = match:class firefox, opacity 1.0
 windowrule = match:class discord, opacity 1.0
 windowrule = match:fullscreen opacity 1.0 override
 windowrule = match:class libreoffice-writer, opacity 1.0
-windowrule = match:class org.pulseaudio.pavucontrol, opacity 0.7
-windowrule = match:class .blueman-manager-wrapped, opacity 0.7
+windowrule = match:class org.pulseaudio.pavucontrol, opacity 1.0
+windowrule = match:class .blueman-manager-wrapped, opacity 1.0
 #WINDOW_RULE_SETTINGS_END
 
 #LAYER_RULE_SETTINGS_START
