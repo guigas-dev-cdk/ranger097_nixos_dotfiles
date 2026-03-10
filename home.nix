@@ -90,7 +90,7 @@ general {
 #GAPS
 gaps_in = 4
 gaps_out = 8
-border_size = 1
+border_size = 2
 
 #BORDER
 #col.active_border = rgba(249,238,195,1)
@@ -114,7 +114,7 @@ layout = dwindle
 
 #WINDOW_SETTINGS_START
 decoration {
-rounding = 20
+rounding = 5
 rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
