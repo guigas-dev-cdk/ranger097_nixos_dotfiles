@@ -2,7 +2,7 @@
 
 window#waybar {
 background: linear-gradient(rgba(0,0,0,0.5));
-border-top: 2px solid #000000;
+border-top: 1px solid #000000;
 }
 
 #custom-spacerRight,
@@ -19,14 +19,14 @@ border-top: 2px solid #000000;
 #custom-blender,
 #custom-dolphin,
 #custom-volume {
-padding-top: 1px;
-padding-bottom: 1px;
+padding-top: 2px;
+padding-bottom: 2px;
 padding-left: 10px;
 padding-right: 10px;
-margin-top: 3px;
-margin-bottom: 3px;
-margin-left: 5px;
-margin-right: 5px;
+margin-top: 1px;
+margin-bottom: 1px;
+margin-left: 2px;
+margin-right: 2px;
 border: 1px solid rgba(60,60,60,0);
 border-radius: 2px;
 font-family: Maple Mono NF;
