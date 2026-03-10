@@ -41,12 +41,15 @@
       };
    })
 {
-home-manager.useGlobalPkgs = true;
-home-manager.useUserPackages = true;
-home-manager.users.ranger = import ./home.nix;
-home-manager.backupFileExtension = "backup";
+home-manager = {
+useGlobalPkgs = true;
+useUserPackages = true;
+users.ranger = import ./home.nix;
+backupFileExtension = "backup";
+};
 }
-  ];
+  
+];
 };  
 
    jirachi = nixpkgs.lib.nixosSystem {
