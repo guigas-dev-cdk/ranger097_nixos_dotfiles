@@ -37,7 +37,7 @@ echo " Updated dotfiles and system flake."
 echo "󰑓 Reloading configs."   
 hyprctl reload
 pkill waybar
-waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css  
+waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css &  
 echo " Done"   
 }
 
@@ -63,7 +63,7 @@ echo " Updated dotfiles and system flake."
 echo "󰑓 Reloading configs."
 hyprctl reload
 pkill waybar
-waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
+waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css &
 echo " Done"
 }
 
@@ -77,7 +77,7 @@ wal -i /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/wallhaven-d85gjg.
 #fastfetch   
 pokeget random --hide-name
 eval "$(direnv hook bash)"
-eval -- "$(/run/current-system/sw/bin/starship init bash --print-full-init)"
+eval "$(starship init bash)"
 '';
 };
 }
