@@ -1,7 +1,7 @@
 /* ranger097 */
 
 window#waybar {
-background: linear-gradient(0deg,rgba(0,0,0,0.6));
+background: linear-gradient(0deg,rgba(50,10,10,0.9));
 border-bottom: 2px solid #000000;
 }
 
@@ -110,6 +110,7 @@ padding-right: 0px;
 color: rgba(120,120,120,1); 
 box-shadow: none;
 }
+
 #workspaces button.urgent { background-color: rgba(0,0,0,0); 
 color:#000000; }
 #mode { background-color: rgba(0,0,0,0); }
