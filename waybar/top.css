@@ -67,9 +67,8 @@ margin-right: 0px;
 }
 
 #workspaces button {
-margin-right: 0px;
-margin-left: 0px;
 padding: 0px;
+margin: 0px;
 }
 
 #workspaces button:hover { 
