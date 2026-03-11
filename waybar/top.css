@@ -1,4 +1,5 @@
 /* ranger097 */
+@import "~/.cache/wal/colors-waybar.css"
 
 * {
 border: none;
@@ -25,8 +26,8 @@ margin-bottom: 10px;
 font-family: Maple Mono NF;
 font-size: 12px;
 font-weight: 400;
-background: linear-gradient(rgba(0,0,0,1));
-color:#bcbcbc;
+background: @background;
+color: @foreground;
 margin-right: 10px;
 border-radius: 10px;
 border-bottom: 0px solid #303030;
