@@ -304,7 +304,7 @@ windowrule = match:class .blueman-manager-wrapped, opacity 1.0
 #WINDOW_RULE_SETTINGS_END
 
 #LAYER_RULE_SETTINGS_START
-layerrule = blur on, match:namespace rofi
+layerrule = blur off, match:namespace rofi
 layerrule = match:namespace rofi, ignore_alpha 0.0
 layerrule = match:namespace waybar, ignore_alpha 0.0
 layerrule = blur off, match:namespace waybar
