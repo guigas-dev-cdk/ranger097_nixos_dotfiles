@@ -323,7 +323,8 @@ layerrule = blur on, match:namespace wlogout
 programs.waybar = {
 enable = true;
 settings = [
-{ "position" = "top";
+{ 
+"position" = "top";
 "layer" = "top";
 "height" = 5;
 "spacing" = 0;
@@ -368,7 +369,8 @@ settings = [
 "5" = "󰫇";
 "6" = "󰫈";
 "default" = ""; };
-"persistent-workspaces" = { "*" = [1 2 3 4 5 6]; "HDMI-A-1" = [ 1 2 3 4 5 6 7 8 9 10 ]; }; 
+"persistent-workspaces" = { "*" = [1 2 3 4 5 6]; "HDMI-A-1" = [ 1 2 3 4 5 6 7 8 9 10 ]; 
+}; 
 };
 "clock" = {
 "format" = "{:%I:%M%p}";};
@@ -387,8 +389,6 @@ settings = [
 { 
 "layer" = "top";
 "position" = "bottom";
-#"height" = 15;
-#"width" = 1526; 
 "spacing" = 0;
 "margin-top" = 0;
 "margin-bottom" = 0;
