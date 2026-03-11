@@ -36,6 +36,8 @@ systemd.enable = false;
 extraConfig = ''
 
 #ranger097
+source = [ "~/.cache/wal/colors-hyprland.conf" ];
+
 monitor = ${ if osConfig.networking.hostName == "jirachi"
 	     then "eDP-1, 3840x2400@59.99400, 0x0, 3"
              else "eDP-1, 1920x1080@60.054, 0x0, 1"}   
@@ -95,8 +97,8 @@ border_size = 2
 #BORDER
 #col.active_border = rgba(249,238,195,1)
 #col.inactive_border = rgba(249,238,195,1)
-col.active_border = rgba(0,0,0,1)
-col.inactive_border = rgba(0,0,0,1)
+col.active_border = $$color4
+col.inactive_border = $$color4
 
 #BORDER_ANIMATION
 #animations {
