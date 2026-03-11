@@ -1,5 +1,7 @@
 /* ranger097 */
-@import url("file:///home/ranger/.cache/wal/colors-waybar.css");
+/*@import url("file:///home/ranger/.cache/wal/colors-waybar.css");*/
+
+@import "../../.cache/wal/colors-waybar.css";
 
 window#waybar {
 background: linear-gradient(rgba(200,200,200,0));
