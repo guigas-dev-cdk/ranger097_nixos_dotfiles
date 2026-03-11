@@ -426,7 +426,7 @@ settings = [
 "default" = "";
 "firefox" = "";
 };
-},
+};
 "custom/vpn_ip" = {
 "format" = "???";
 "format-alt" = "{}";
