@@ -410,10 +410,7 @@ settings = [
 "custom/blender" = { "format" = " "; "on-click" = "blender"; };
 "custom/dolphin" = { "format" = "󱢴 "; "on-click" = "dolphin"; };
 "custom/volume" = { "format" = " "; "on-click" = "pavucontrol"; };
-"custom/power" = {
-"format" = "⏻ ";
-"on-click" = "wlogout";
-};
+"custom/power" = { "format" = "⏻ "; "on-click" = "wlogout"; };
 }
 ];
 style = ''
