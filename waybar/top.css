@@ -48,6 +48,7 @@ box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;    
 transition: none;
+text-shadow: none;
 }
 
 #clock,
@@ -106,6 +107,8 @@ box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;
 transition: none;
+box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+text-shadow: none;
 }
 
 #workspaces button.urgent { 
@@ -115,10 +118,14 @@ box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;
 transition: none;
+box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+text-shadow: none;
 }
 
 #mode { 
 background-color: rgba(0,0,0,0); 
+box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+text-shadow: none;
 }
 
 #mode:hover {
@@ -127,6 +134,8 @@ box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;
 transition: none;
+box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+text-shadow: none;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
