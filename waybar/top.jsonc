@@ -134,7 +134,7 @@
 
 "mpris": {
 "format": "{artist} - {title}",
-"max-length": "40",
+"max-length": "80",
 "player-icons": {
 "default": "",
 "firefox": ""
