@@ -45,6 +45,9 @@ text-shadow: none;
 #workspaces button:hover {
 color: rgba(200,60,60,1);
 box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;    
+transition: none;
 }
 
 #clock,
@@ -79,6 +82,10 @@ padding: 0px;
 margin: 0px;
 padding-left: 1px;
 padding-right: 1px;
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
 }
 
 #workspaces button:hover {
@@ -86,6 +93,9 @@ background: none;
 background-color: rgba(0,0,0,0); 
 color: rgba(200,60,60,1); 
 box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
 }
 
 #workspaces button.active {
@@ -93,12 +103,18 @@ background: none;
 background-color: rgba(0,0,0,0);
 color: rgba(120,120,120,1); 
 box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
 }
 
 #workspaces button.urgent { 
 background-color: rgba(0,0,0,0); 
 color:#000000; 
 box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
 }
 
 #mode { 
@@ -108,6 +124,9 @@ background-color: rgba(0,0,0,0);
 #mode:hover {
 background-color: rgba(0,0,0,0);
 box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
