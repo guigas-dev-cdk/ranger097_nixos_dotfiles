@@ -10,6 +10,7 @@
     "margin-left" : 0,
     "margin-right" : 0,
     "modules-left": [
+    "custom/themes"
     ],
     "modules-center": [
  // "custom/spacerLeft",
@@ -98,7 +99,10 @@
 "custom/power": {
 "format": "⏻ ",
 "on-click":"wlogout"
-
 },
 
+"custom/themes": {
+"format": " ",
+"on-click":"python /home/ranger/ranger097_nixos_dotfiles/Python/theme_switcher/theme.py"
+},
 }
