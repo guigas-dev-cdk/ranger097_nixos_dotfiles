@@ -34,11 +34,11 @@ echo " Building system flake..."
 sudo nixos-rebuild switch --flake .#deoxy
 wait
 echo " Updated dotfiles and system flake."
-echo "󰑓 Reloading configs."   
-hyprctl reload
-pkill waybar
-waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css &  
-echo " Done"   
+#echo "󰑓 Reloading configs."   
+#hyprctl reload
+#pkill waybar
+#waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css & waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css &  
+#echo " Done"   
 }
 
 jgit() {
@@ -62,11 +62,11 @@ wait
 echo " Updated dotfiles and system flake."
 echo "󰑓 Reloading configs."
 hyprctl reload
-pkill waybar
-nohup waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css > /dev/null 2>&1 & 
-nohup waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css > /dev/null 2>&1 &
-disallow &> /dev/null
-echo " Done"
+#pkill waybar
+#nohup waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css > /dev/null 2>&1 & 
+#nohup waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css > /dev/null 2>&1 &
+#disallow &> /dev/null
+#echo " Done"
 }
 
 upgrade() {

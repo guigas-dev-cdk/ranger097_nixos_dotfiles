@@ -23,7 +23,7 @@ in
     ".config/hypr/hypridle.conf".source = ./hypr/hypridle.conf;
     ".config/hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
     ".config/hypr/hyprsunset.conf".source = ./hypr/hyprsunset.conf;
-    ".config/waybar".source = ./waybar; 
+    # ".config/waybar".source = ./waybar; 
     ".config/ghostty".source = ./ghostty;
     ".config/starship.toml".source = ./starship/starship.toml;
     ".config/rofi".source = ./rofi; 
@@ -132,8 +132,8 @@ scale = 0.99
 #BLUR
 blur {
 enabled = true
-size = 3
-passes = 3
+size = 5
+passes = 5
 contrast = 1.0
 vibrancy = 0
 vibrancy_darkness = 0
@@ -294,7 +294,7 @@ bindl = , XF86AudioPrev, exec, playerctl previous
 #KEYBINDING_SETTINGS_END
 
 #WINDOW_RULE_SETTINGS_START
-windowrule = match:class code, opacity 0.95
+windowrule = match:class code, opacity 0.80
 windowrule = match:class firefox, opacity 1.0
 windowrule = match:class discord, opacity 1.0
 windowrule = match:fullscreen opacity 1.0 override
@@ -311,6 +311,531 @@ layerrule = blur off, match:namespace waybar
 layerrule = blur on, match:namespace wlogout
 #LAYER_RULE_SETTINGS_END
 '';  
+};
+
+programs.waybar = {
+enable = true;
+settings = [
+{
+    "position": "top",
+    "layer": "top",
+    "height": 5,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+    "modules-left": [
+    // "custom/spacer",
+    // "custom/left-bracket",
+     "hyprland/window",
+    // "custom/right-bracket",
+    // "custom/left-bracket",
+     "hyprland/workspaces"
+    // "custom/right-bracket"
+    ],
+    "modules-center": [
+  //  "custom/left-bracket",
+    "mpris"
+  //  "custom/right-bracket"
+    ],
+    "modules-right": [
+       // "custom/left-bracket",
+        "custom/vpn_ip",
+       // "custom/right-bracket",
+      //  "custom/left-bracket",
+        "clock",
+      //  "custom/right-bracket",
+       // "custom/left-bracket",
+        "battery"
+       // "custom/right-bracket",
+       // "custom/spacer"
+    ],
+"hyprland/window": {
+"format": "{class} {title}",
+"separate-outputs": true,
+"icon": false,
+"rewrite": {
+// "(.*)ghostty(.*)": "Ghostty 幽霊",
+// "(.*)Qmmp(.*)": "Qmmp 音楽",
+// "(.*)home/ranger/Music(.*)": "Qmmp 音楽",
+// "(.*)code(.*)": "Vscode コード",
+// "(.*)steam(.*)": "Steam 蒸気",
+// "(.*)pavucontrol(.*)": "Volume 音量",
+// "(.*)blueman-manager(.*)": "Bluetooth 青",
+// "(.*)discord(.*)": "Discord",
+// "(.*)gimp(.*)": "Gimp 芸術",
+// "(.*)blender(.*)": "Blender ブレンダー",
+// "(.*)libreoffice-writer(.*)": "Office 書",
+// "(.*)Youtube(.*)": "Youtube 貴方の管",
+// "(.*)kdenlive(.*)": "Kdenlive 動画",
+// "(.*)firefox(.*)": "Firefox フォクすけ",
+// "(.*)org.kde.dolphin(.*)": "Dolphin 海豚",
+// "(.*)nm-connection-editor(.*)": "Wifi ワイファイ",
+// "(.*)Kvantum Manager(.*)": "Kvantum 主題",
+// "(.*)Foliate(.*)": "Books もと",
+// " ": "Ranger レンジャー"
+            "(.*)ghostty(.*)": "Ghostty",
+            "(.*)Qmmp(.*)": "Qmmp",
+            "(.*)home/ranger/Music(.*)": "Qmmp",
+            "(.*)code(.*)": "Vscode",
+            "(.*)steam(.*)": "Steam",
+            "(.*)pavucontrol(.*)": "Volume",
+            "(.*)blueman-manager(.*)": "Bluetooth",
+            "(.*)discord(.*)": "Discord",
+            "(.*)gimp(.*)": "Gimp",
+            "(.*)blender(.*)": "Blender",
+            "(.*)libreoffice-writer(.*)": "Office",
+            "(.*)Youtube(.*)": "Youtube",
+            "(.*)kdenlive(.*)": "Kdenlive",
+            "(.*)firefox(.*)": "Firefox",
+            "(.*)org.kde.dolphin(.*)": "Dolphin",
+            "(.*)nm-connection-editor(.*)": "Wifi",
+            "(.*)Kvantum Manager(.*)": "Kvantum",
+            "(.*)Foliate(.*)": "Books",
+            " ": "Ranger"
+        }
+},
+"hyprland/workspaces": {
+"format": "{icon}",
+"format-icons": {
+//"1": "一",
+//"2": "二",
+//"3": "三",
+//"4": "四",
+//"5": "五",
+//"6": "六",
+//"7": "七",
+//"8": "八",
+//"9": "九",
+//"10": "十",
+  "1": "󰫃",
+  "2": "󰫄",
+  "3": "󰫅",
+  "4": "󰫆",
+  "5": "󰫇",
+  "6": "󰫈",
+  "default": "",
+ },
+   "persistent-workspaces": {
+        "*": [1,2,3,4,5,6],
+        "HDMI-A-1": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    }
+},
+
+    "clock": {
+        "format": "{:%I:%M%p}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-full": "{capacity}%",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    },
+
+"custom/qmmp": {
+    "format": "{}",
+    "exec": "playerctl --player=qmmp metadata --format '{{artist}} - {{title}}' || echo ''",
+    "interval": 2,
+    "max-length": 40,
+    "on-click": "playerctl --player=qmmp play-pause",
+    "escape": true
+},
+
+"mpris": {
+"format": "{artist} - {title}",
+"max-length": "80",
+"player-icons": {
+"default": "",
+"firefox": ""
+}
+
+},
+    "custom/vpn_ip": {
+       "format":"???",
+       "format-alt":"{}",
+       "exec": "curl -s https://icanhazip.com",
+       "on-click": ""
+    },
+
+    "custom/right-bracket": { "format": "]" },
+    "custom/left-bracket": { "format": "[" },
+    "custom/spacer": { "format": " " }
+}
+}
+
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+ // "height": 15, // Waybar height (to be removed for auto height)
+ // "width": 1526, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    "margin-top" : 0,
+    "margin-bottom": 0,
+    "margin-left" : 0,
+    "margin-right" : 0,
+    "modules-left": [
+    ],
+    "modules-center": [
+ // "custom/spacerLeft",
+    "custom/power",
+ // "custom/VacuumTube",
+    "custom/qmmp",
+ // "custom/ProtonVpn",
+    "custom/code",
+    "custom/firefox",
+    "custom/ghostty",
+    "custom/blender",
+    "custom/dolphin",
+    "custom/steam",
+    "custom/discord",
+    "custom/volume"
+ // "custom/spacerRight"
+    ],
+    "modules-right": [
+    ],
+
+
+
+"custom/spacerRight": {
+  "format": " "
+},
+
+"custom/spacerLeft": {
+  "format": " "
+},
+"custom/VacuumTube": {
+"format": " ",
+"on-click": "freetube"
+},
+
+"custom/ProtonVpn": {
+"format": " ",
+"on-click": "protonvpn-app"
+},
+
+"custom/code": {
+"format": " ",
+"on-click": "code"
+},
+
+"custom/ghostty": {
+"format": " ",
+"on-click": "ghostty"
+},
+
+"custom/firefox": {
+"format": " ",
+"on-click": "firefox"
+},
+
+
+"custom/steam": {
+"format": " ",
+"on-click": "steam -newbigpicture"
+},
+
+"custom/discord": {
+"format": " ",
+"on-click": "discord"
+},
+
+"custom/qmmp": {
+"format": " ",
+"on-click":"qmmp"
+},
+
+"custom/blender": {
+"format": " ",
+"on-click":"blender"
+},
+
+"custom/dolphin": {
+"format": "󱢴 ",
+"on-click":"dolphin"
+},
+
+"custom/volume": {
+"format": " ",
+"on-click":"pavucontrol"
+},
+
+"custom/power": {
+"format": "⏻ ",
+"on-click":"wlogout"
+
+},
+
+}
+
+
+}
+
+];
+style = ''
+
+* {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+
+window#waybar {
+background: linear-gradient(0deg,rgba(50,10,10,0.0));
+border-bottom: 0px solid #000000;
+}
+
+#window,
+#workspaces,
+#clock,
+#custom-vpn_ip,
+#battery,
+#mpris {
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 10px;
+margin-bottom: 5px;
+font-family: Maple Mono NF;
+font-size: 12px;
+font-weight: 400;
+background: linear-gradient(rgba(0,0,0,1));
+color:#bcbcbc;
+margin-right: 5px;
+border-radius: 10px;
+border-bottom: 0px solid #303030;
+box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+text-shadow: none;
+}
+
+#window:hover,
+#mpris:hover,
+#clock:hover,
+#custom-vpn_ip:hover,
+#battery:hover,
+#workspaces button:hover {
+color: rgba(200,60,60,1);
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+#clock,
+#mpris,
+#custom-vpn_ip {
+margin-right: 5px;
+}
+
+#battery {
+margin-right: 10px;
+}
+
+#window {
+margin-left: 10px;
+}
+
+#mpris {
+margin-right: 0px;
+}
+
+#custom-vpn_ip {
+color: #bcbcbc;
+}
+
+#custom-qmmp {
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#workspaces button {
+padding: 0px;
+margin: 0px;
+padding-left: 2px;
+padding-right: 2px;
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+#workspaces button:hover {
+background: none;
+background-color: rgba(0,0,0,0);
+color: rgba(200,60,60,1);
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+#workspaces button.active {
+background: none;
+background-color: rgba(0,0,0,0);
+color: rgba(120,120,120,1);
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+#workspaces button.urgent {
+background-color: rgba(0,0,0,0);
+color:#000000;
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+#mode {
+background-color: rgba(0,0,0,0);
+}
+
+#mode:hover {
+background-color: rgba(0,0,0,0);
+box-shadow: none;
+text-shadow: none;
+-gtk-icon-shadow: none;
+transition: none;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces { margin-left: 0px; }
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces { margin-right: 0px; }
+
+#custom-spacerRight,
+#custom-spacerLeft,
+#custom-power,
+#custom-VacuumTube,
+#custom-ProtonVpn,
+#custom-code,
+#custom-ghostty,
+#custom-steam,
+#custom-firefox,
+#custom-discord,
+#custom-qmmp,
+#custom-blender,
+#custom-dolphin,
+#custom-volume {
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 3px;
+margin-right: 3px;
+border: 1px solid rgba(0,0,0,1);
+border-radius: 10px;
+font-family: Maple Mono NF;
+font-size: 15px;
+font-weight: 300;
+background: linear-gradient(rgba(0,0,0,1));
+color: rgba(200,60,60,1);
+box-shadow: -2px 3px 3px rgba(0,0,0,0.5);
+}
+
+#custom-power {
+padding-left: 10px;
+padding-right: 5px;
+}
+
+#custom-code {
+padding-left: 10px;
+padding-right: 5px;
+}
+
+#custom-ghostty {
+padding-left: 11px;
+padding-right: 4px;
+}
+
+#custom-steam {
+padding-left: 10px;
+padding-right: 5px;
+}
+
+#custom-firefox {
+padding-left: 10px;
+padding-right: 5px;
+}
+
+#custom-discord {
+padding-left: 8px;
+padding-right: 7px;
+}
+
+#custom-qmmp {
+padding-left: 9px;
+padding-right: 6px;
+}
+
+#custom-blender {
+padding-left: 9px;
+padding-right: 6px;
+}
+
+#custom-dolphin {
+padding-left: 10px;
+padding-right: 5px;
+}
+
+#custom-volume {
+padding-left: 9px;
+padding-right: 6px;
+}
+
+#custom-power:hover,
+#custom-VacuumTube:hover,
+#custom-ProtonVpn:hover,
+#custom-code:hover,
+#custom-ghostty:hover,
+#custom-steam:hover,
+#custom-firefox:hover,
+#custom-discord:hover,
+#custom-qmmp:hover,
+#custom-blender:hover,
+#custom-dolphin:hover,
+#custom-volume:hover {
+color: rgba(200,200,200,1);
+background: linear-gradient(rgba(100,100,100,1));
+}
+
+#custom-spacerRight {
+border-radius: 0px 0px 0px 0px;
+background: linear-gradient(rgba(0,0,0,1));
+padding-right:0px;
+margin-left:0px;
+}
+
+#custom-spacerLeft {
+border-radius: 0px 0px 0px 0px;
+background: linear-gradient(rgba(0,0,0,1));
+padding-left:0px;
+margin-left:0px;
+}
+
+#custom-power {
+margin-left: 5px;
+}
+
+#custom-volume {
+margin-right: 5px;
+}
+
+
+
+'';
 };
 
   # Let Home Manager manage itself
