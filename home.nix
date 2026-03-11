@@ -12,11 +12,11 @@ in
   home.homeDirectory = "/home/ranger";
   home.stateVersion = "25.11"; 
   home.pointerCursor = {
-     package = myCursor;
-     name = "Pokemon";
-     size = 32;
-     gtk.enable = true;
-     x11.enable = true;
+  package = myCursor;
+  name = "Pokemon";
+  size = 32;
+  gtk.enable = true;
+  x11.enable = true;
   };
 
   home.file = {
@@ -88,7 +88,7 @@ permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
 general {
 #GAPS
 gaps_in = 4
-gaps_out = 5,10,10,10
+gaps_out = 0,10,10,10
 border_size = 2
 
 #BORDER
