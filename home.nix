@@ -31,13 +31,12 @@ in
   };
 
 wayland.windowManager.hyprland = {
-source = [ "~/.cache/wal/colors-hyprland.conf" ];
 enable = true;
 systemd.enable = false;
 extraConfig = ''
 
 #ranger097
-
+source = ~/.cache/wal/colors-hyprland.conf
 monitor = ${ if osConfig.networking.hostName == "jirachi"
 	     then "eDP-1, 3840x2400@59.99400, 0x0, 3"
              else "eDP-1, 1920x1080@60.054, 0x0, 1"}   
