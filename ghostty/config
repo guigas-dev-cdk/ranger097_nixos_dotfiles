@@ -23,6 +23,11 @@ background-image-repeat = false
 
 #CURSOR
 cursor-style = underline
-cursor-color = #DBBA95
+#cursor-color = #DBBA95
 cursor-style-blink = true
 adjust-cursor-thickness = 400%
+
+
+#PYWAL
+config-file = ?~/.cache/wal/ghostty.conf
+
