@@ -30,7 +30,7 @@ font-size: 12px;
 font-weight: 400;
 background: linear-gradient(rgba(0,0,0,1));
 color:#bcbcbc;
-margin-right: 5px;
+margin-right: 10px;
 border-radius: 10px;
 border-bottom: 0px solid #303030;
 box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
@@ -56,7 +56,7 @@ text-shadow: none;
 #clock,
 #mpris,
 #custom-vpn_ip {
-margin-right: 5px;
+margin-right: 10px;
 }
 
 #battery {
