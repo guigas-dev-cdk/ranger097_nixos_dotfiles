@@ -48,8 +48,8 @@ exec-once = hyprlock
 exec-once = swww-daemon
 exec-once = /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/1116508.jpg
 #exec-once = LD_LIBRARY_PATH=/run/opengl-driver/lib mpvpaper -o "no-audio --loop-playlist --panscan=1.0 hwdec=auto" eDP-1 /home/ranger/Videos/wallpapers/guweiz.mp4
-exec-once = waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css
-exec-once = waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
+#exec-once = waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css
+#exec-once = waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css
 exec-once = protonvpn-app
 exec-once = hypridle
 exec-once = hyprsunset
@@ -313,109 +313,164 @@ layerrule = blur on, match:namespace wlogout
 '';  
 };
 
-
-
-
-
-
-
-
 programs.waybar = {
 enable = true;
-settings = [
-{ 
-"position" = "top";
-"layer" = "top";
-"height" = 5;
-"spacing" = 0;
-"margin-top" = 0;
-"margin-bottom" = 0;
-"margin-left" = 0;
-"margin-right" = 0;
-"modules-left" = [ "hyprland/window" "hyprland/workspaces"];
-"modules-center" = ["mpris"];
-"modules-right" = ["custom/vpn_ip" "clock" "battery"];
-"hyprland/window" = {
-"format" = "{class} {title}";
-"separate-outputs" = true;
-"icon" = false;
-"rewrite" = {
-"(.*)ghostty(.*)" = "Ghostty";
-"(.*)Qmmp(.*)" = "Qmmp";
-"(.*)home/ranger/Music(.*)" = "Qmmp";
-"(.*)code(.*)" = "Vscode";
-"(.*)steam(.*)" = "Steam";
-"(.*)pavucontrol(.*)" = "Volume";
-"(.*)blueman-manager(.*)" = "Bluetooth";
-"(.*)discord(.*)" = "Discord";
-"(.*)gimp(.*)" = "Gimp";
-"(.*)blender(.*)" = "Blender";
-"(.*)libreoffice-writer(.*)" = "Office";
-"(.*)Youtube(.*)" = "Youtube";
-"(.*)kdenlive(.*)" = "Kdenlive";
-"(.*)firefox(.*)" = "Firefox";
-"(.*)org.kde.dolphin(.*)" = "Dolphin";
-"(.*)nm-connection-editor(.*)" = "Wifi";
-"(.*)Kvantum Manager(.*)" = "Kvantum";
-"(.*)Foliate(.*)" = "Books";
-" " = "Ranger"; };
-"hyprland/workspaces" = {
-"format" = "{icon}";
-"format-icons" = {
-"1" = "󰫃";
-"2" = "󰫄";
-"3" = "󰫅";
-"4" = "󰫆";
-"5" = "󰫇";
-"6" = "󰫈";
-"default" = ""; };
-"persistent-workspaces" = { "*" = [1 2 3 4 5 6]; "HDMI-A-1" = [ 1 2 3 4 5 6 7 8 9 10 ]; 
-}; 
-};
-"clock" = {
+settings = {
+
+
+			mainBar = { 
+			position = "top";
+			layer = "top";
+			height = 5;
+			spacing = 0;
+			margin-top = 0;
+			margin-bottom = 0;
+			margin-left = 0;
+			margin-right = 0;
+			modules-left = [ "hyprland_window" "hyprland_workspaces"];
+			modules-center = ["mpris"];
+			modules-right = ["custom_vpn_ip" "clock" "battery"];
+			};
+			hyprland_window = {
+			format = "{class} {title}";
+			separate-outputs = true;
+			icon = false;
+				rewrite = {
+				"(.*)ghostty(.*)" = "Ghostty";
+				"(.*)Qmmp(.*)" = "Qmmp";
+				"(.*)home/ranger/Music(.*)" = "Qmmp";
+				"(.*)code(.*)" = "Vscode";
+				"(.*)steam(.*)" = "Steam";
+				"(.*)pavucontrol(.*)" = "Volume";
+				"(.*)blueman-manager(.*)" = "Bluetooth";
+				"(.*)discord(.*)" = "Discord";
+				"(.*)gimp(.*)" = "Gimp";
+				"(.*)blender(.*)" = "Blender";
+				"(.*)libreoffice-writer(.*)" = "Office";
+				"(.*)Youtube(.*)" = "Youtube";
+				"(.*)kdenlive(.*)" = "Kdenlive";
+				"(.*)firefox(.*)" = "Firefox";
+				"(.*)org.kde.dolphin(.*)" = "Dolphin";
+				"(.*)nm-connection-editor(.*)" = "Wifi";
+				"(.*)Kvantum Manager(.*)" = "Kvantum";
+				"(.*)Foliate(.*)" = "Books";
+				" " = "Ranger"; 
+				};
+			
+			};
+			hyprland_workspaces = {
+			"format" = "{icon}";
+			"format-icons" = {
+			"1" = "󰫃";
+			"2" = "󰫄";
+			"3" = "󰫅";
+			"4" = "󰫆";
+			"5" = "󰫇";
+			"6" = "󰫈";
+			"default" = ""; 
+			};
+		
+			"persistent-workspaces" = { 
+			"*" = [1 2 3 4 5 6]; 
+			"HDMI-A-1" = [ 1 2 3 4 5 6 7 8 9 10 ]; 
+			}; 
+			};
+clock = {
 "format" = "{:%I:%M%p}";};
-"battery" = {
-"states" = {
-"warning" = 30; "critical" = 15;};
+"battery" = { 
+"states" = { 
+"warning" = 30; 
+"critical" = 15;};
 "format" = "{capacity}%";};
-"mpris" = { "format" = "{artist} - {title}"; "max-length" = "80"; };
-"custom/vpn_ip" = {
+
+mpris = { 
+"format" = "{artist} - {title}"; 
+"max-length" = "80"; 
+};
+
+custom_vpn_ip = {
 "format" = "???";
 "format-alt" = "{}";
 "exec" = "curl -s https://icanhazip.com";
 "on-click" = "";
 };
 };
-{ 
-"layer" = "top";
-"position" = "bottom";
-"spacing" = 0;
-"margin-top" = 0;
-"margin-bottom" = 0;
-"margin-left" = 0;
-"margin-right" = 0;
-"modules-left" = [];
-"modules-center" = [ "custom/power" "custom/qmmp" "custom/code" "custom/firefox" "custom/ghostty" "custom/blender" "custom/dolphin" "custom/steam" "custom/discord" "custom/volume" ];
-"modules-right" = [];
-"custom/spacerRight" = { "format" = " "; };
-"custom/spacerLeft" = { "format" = " "; };
-"custom/VacuumTube" = { "format" = " "; "on-click" = "freetube"; };
-"custom/ProtonVpn" = { "format" = " "; "on-click" = "protonvpn-app"; };
-"custom/code" = { "format" = " "; "on-click" = "code"; };
-"custom/ghostty" = { "format" = " "; "on-click" = "ghostty"; };
-"custom/firefox" = { "format" = " "; "on-click" = "firefox"; };
-"custom/steam" = { "format" = " "; "on-click" = "steam -newbigpicture"; };
-"custom/discord" = { "format" = " "; "on-click" = "discord"; };
-"custom/qmmp" = { "format" = " "; "on-click" = "qmmp"; };
-"custom/blender" = { "format" = " "; "on-click" = "blender"; };
-"custom/dolphin" = { "format" = "󱢴 "; "on-click" = "dolphin"; };
-"custom/volume" = { "format" = " "; "on-click" = "pavucontrol"; };
-"custom/power" = { 
-"format" = "⏻ "; 
-"on-click" = "wlogout"; 
+
+
+bottomBar = { 
+layer = "top";
+position = "bottom";
+spacing = 0;
+margin-top = 0;
+margin-bottom = 0;
+margin-left = 0;
+margin-right = 0;
+modules-left = [];
+modules-center = [ "custom/power" "custom/qmmp" "custom/code" "custom/firefox" "custom/ghostty" "custom/blender" "custom/dolphin" "custom/steam" "custom/discord" "custom/volume" ];
+modules-right = [];
+custom_VacuumTube = { 
+format = " "; 
+on-click = "freetube"; 
 };
-}
-];
+
+custom_ProtonVpn = { 
+format = " "; 
+on-click = "protonvpn-app"; 
+};
+
+custom_code = { 
+format = " "; 
+on-click = "code"; 
+};
+
+custom_ghostty = { 
+format = " "; 
+on-click = "ghostty"; 
+};
+
+custom_firefox = { 
+format = " "; 
+on-click = "firefox"; 
+};
+
+custom_steam = { 
+format = " "; 
+on-click = "steam -newbigpicture"; 
+};
+
+custom_discord = { 
+format = " "; 
+on-click = "discord"; 
+};
+
+custom_qmmp = { 
+format = " "; 
+on-click = "qmmp"; 
+};
+
+custom_blender = { 
+format = " "; 
+on-click = "blender"; 
+};
+
+custom_dolphin = { 
+format = "󱢴 "; 
+on-click = "dolphin"; 
+};
+
+custom_volume = { 
+format = " "; 
+on-click = "pavucontrol"; 
+};
+
+custom_power = { 
+format = "⏻ "; 
+on-click = "wlogout"; 
+};
+};
+};
+
+
 style = ''
 * {
 border: none;
@@ -672,7 +727,7 @@ margin-right: 5px;
 
 
 '';
-};
+
 
   # Let Home Manager manage itself
   programs.home-manager.enable = true;
