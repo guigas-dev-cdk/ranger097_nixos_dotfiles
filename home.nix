@@ -433,9 +433,6 @@ settings = [
 "exec" = "curl -s https://icanhazip.com";
 "on-click" = "";
 };
-"custom/right-bracket" = { "format" = "]" };
-"custom/left-bracket" = { "format" = "[" };
-"custom/spacer" = { "format" = " " };
 }
 }
 {
