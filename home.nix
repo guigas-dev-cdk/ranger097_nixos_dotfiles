@@ -409,7 +409,7 @@ settings = [
 "format-full" = "{capacity}%";
 "format-charging" = "{capacity}% ";
 "format-plugged" = "{capacity}% ";
-"format-icons" = ["  ", "  ", "  ", "  ", "  "]
+"format-icons" = [];
 };
 "custom/qmmp" = {
 "format" = "{}";
@@ -452,58 +452,58 @@ settings = [
 "modules-center" = [ "custom/power" "custom/qmmp" "custom/code" "custom/firefox" "custom/ghostty" "custom/blender" "custom/dolphin" "custom/steam" "custom/discord" "custom/volume" ];
 "modules-right" = [];
 "custom/spacerRight" = {
-"format" = " "
+"format" = " ";
 };
 "custom/spacerLeft" = {
-"format" = " "
+"format" = " ";
 };
 "custom/VacuumTube" = {
 "format" = " ";
-"on-click" = "freetube"
+"on-click" = "freetube";
 };
 "custom/ProtonVpn" = {
 "format" = " ";
-"on-click" = "protonvpn-app"
+"on-click" = "protonvpn-app";
 };
 "custom/code" = {
 "format" = " ";
-"on-click" = "code"
+"on-click" = "code";
 };
 "custom/ghostty" = {
 "format" = " ";
-"on-click" = "ghostty"
+"on-click" = "ghostty";
 };
 "custom/firefox" = {
 "format" = " ";
-"on-click" = "firefox"
+"on-click" = "firefox";
 };
 "custom/steam" = {
 "format" = " ";
-"on-click" = "steam -newbigpicture"
+"on-click" = "steam -newbigpicture";
 };
 "custom/discord" = {
 "format" = " ";
-"on-click" = "discord"
+"on-click" = "discord";
 };
 "custom/qmmp" = {
 "format" = " ";
-"on-click" = "qmmp"
+"on-click" = "qmmp";
 };
 "custom/blender" = {
 "format" = " ";
-"on-click" = "blender"
+"on-click" = "blender";
 };
 "custom/dolphin" = {
 "format" = "󱢴 ";
-"on-click" = "dolphin"
+"on-click" = "dolphin";
 };
 "custom/volume" = {
 "format" = " ";
-"on-click" = "pavucontrol"
+"on-click" = "pavucontrol";
 };
 "custom/power" = {
 "format" = "⏻ ";
-"on-click" = "wlogout"
+"on-click" = "wlogout";
 };
 }
 }
