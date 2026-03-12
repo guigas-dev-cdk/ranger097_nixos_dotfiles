@@ -53,7 +53,7 @@ Lets open your hardware-configuration.nix.
 ```
 sudo nano hardware-configuration.nix
 ```
-Paste this in your hardware-configuration.nix
+Paste this in your hardware-configuration.nix if it doesnt already exist.
 ```
  boot.initrd.luks.devices."PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE." = {
      device = "/dev/disk/by-uuid/PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE.";
@@ -64,7 +64,9 @@ Look closely in the hardware-configuration.nix where it says:<br/>
 "boot.initrd.luks.devices"<br/>
 and on the line below that<br/>
 "device ="
-<img width="3840" height="2400" alt="2026-03-08-010125_hyprshot" src="https://github.com/user-attachments/assets/60697550-fa27-4741-8c0f-6ae7119a704f" />
+
+<img width="3840" height="2400" alt="2026-03-12-064052_hyprshot" src="https://github.com/user-attachments/assets/c72c863b-f292-4f03-9169-66f6c787c838" />
+
 In another terminal or tab lets run a few commands.
 ```
 sudo blkid -t TYPE=crypto_LUKS
@@ -76,7 +78,9 @@ lsblk -f
 My ID is "__luks-7c42da92-5364-41d0-900d-68c9410d94e3__"<br/>
 Delete "PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE." and replace it with "YOUR ID" (*aka UUID when you run the command above*) (*Hint: use the highlighted locations displayed in the screenshot if you need help with the formating*)
 *__IMPORTANT__: Notice i have __2__ luks devices. Big chance you have __1__. If so great. If not, add one.
-<img width="3840" height="2400" alt="2026-03-08-012218_hyprshot" src="https://github.com/user-attachments/assets/0b63ea00-f57c-49ba-bae5-f2438049bc52" />
+
+<img width="3840" height="2400" alt="2026-03-12-064913_hyprshot" src="https://github.com/user-attachments/assets/713713ef-07ac-4a4e-85dc-351ac94b5473" />
+
 The screenshot above is how i have added my second device if you needed too as well.
 Save the file and exit back to the terminal.
 
@@ -90,7 +94,9 @@ Inside the ranger097_nixos_dotfiles repo lets enter the flake.nix.
 sudo nano flake.nix
 ```
 Okay look at the screenshot below.
-<img width="3840" height="2400" alt="2026-03-08-031149_hyprshot" src="https://github.com/user-attachments/assets/c3f2b8b0-84d0-47d2-8962-666c0abf3a17" />
+
+<img width="3840" height="2400" alt="2026-03-12-065338_hyprshot" src="https://github.com/user-attachments/assets/4c34841e-2b48-4da6-b8c8-70cb80df95c8" />
+
 Notice how "deoxy" is written 3 times in the flake. Remove the name "deoxy" and write in your hostname in all 3 locations in the highlighted area in the screenshot.
 
 ## 5.2 Keys
@@ -138,7 +144,9 @@ sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#deox
 
 ## Features and Ricing.
 __[Rofi](https://github.com/davatorium/rofi)__
-<img width="3840" height="2400" alt="2026-03-04-025925_hyprshot" src="https://github.com/user-attachments/assets/bdbeca52-1adf-485a-ab1c-9d1000484f7d" />
+<img width="3840" height="2400" alt="2026-03-12-051820_hyprshot" src="https://github.com/user-attachments/assets/7a4508bd-df4e-4e7a-ab92-89aa7bd40e0d" />
+<img width="3840" height="2400" alt="2026-03-12-051909_hyprshot" src="https://github.com/user-attachments/assets/2ef24415-4866-4b09-8f32-e2e29c6b69ef" />
+<img width="3840" height="2400" alt="2026-03-12-051952_hyprshot" src="https://github.com/user-attachments/assets/06e83ae5-2994-4b85-8302-ed15f80db6cb" />
 
 __[Vscode](https://code.visualstudio.com/)__
 <img width="3840" height="2400" alt="2026-03-12-032539_hyprshot" src="https://github.com/user-attachments/assets/0fdd9655-607f-4143-91ed-3a45d4e32271" />
@@ -151,14 +159,16 @@ __[Pokeget](https://github.com/talwat/pokeget-rs)__
 <img width="3840" height="2400" alt="2026-03-12-031617_hyprshot" src="https://github.com/user-attachments/assets/fac83c12-5a08-4e97-a8ec-2aaf4ffe3136" />
 <img width="3840" height="2400" alt="2026-03-12-031836_hyprshot" src="https://github.com/user-attachments/assets/584554af-32e5-4bc4-b458-7e5f1afd8bb6" />
 
-
 __[Qmmp](https://qmmp.ylsoftware.com/downloads.php)__, __[Waybar](https://github.com/Alexays/Waybar)__, and waybar module __[Mpris](https://github.com/natsukagami/mpd-mpris)__.
-<img width="3840" height="2400" alt="2026-03-04-024628_hyprshot" src="https://github.com/user-attachments/assets/2b02bd34-a52d-4b8e-953e-13d0f77f7b0b" />
+<img width="3840" height="2400" alt="2026-03-12-052249_hyprshot" src="https://github.com/user-attachments/assets/5f297987-dc8b-4de8-b76a-897f6d4db93d" />
+<img width="3840" height="2400" alt="2026-03-12-052432_hyprshot" src="https://github.com/user-attachments/assets/e3c768bf-acdf-4be3-9447-d7eeaa0d368a" />
+<img width="3840" height="2400" alt="2026-03-12-052351_hyprshot" src="https://github.com/user-attachments/assets/2d37cf65-1259-4752-94b6-c09f055bfc93" />
 
-__[Stylus]()__
-<img width="3840" height="2400" alt="2026-03-05-223258_hyprshot" src="https://github.com/user-attachments/assets/ce8903c0-baa8-4cc6-ab2b-e7ffc4e60dfb" />
-<img width="3840" height="2400" alt="2026-03-05-230645_hyprshot" src="https://github.com/user-attachments/assets/46d2cb68-abb2-4232-a9db-fad15a81e292" />
-Here you will see that youtube has grey text and thumbnails unless hovered over(then its full of color). This is because im a night owl and im trying to limit brightness and bluelight. All played videos are normal with no added effects so its a minimal change in functionality beside saving your eyes (*I thought the pixel peepers would apreciate this*). That being said this is disabled by defualt. If you want to achieve this, simply download the userstylus extension in firefox and copy the css i provided in the flake in the "youtube" directory. paste it into the userstylus and Boom!, youre done. Easy.
+__[Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)__
+<img width="3840" height="2400" alt="2026-03-12-052958_hyprshot" src="https://github.com/user-attachments/assets/9c9f41bf-9bca-48ad-9b2c-8a819a45c343" />
+<img width="3840" height="2400" alt="2026-03-12-053256_hyprshot" src="https://github.com/user-attachments/assets/ceab4f08-30fc-4375-92c6-066387060f5e" />
+<img width="3840" height="2400" alt="2026-03-12-053157_hyprshot" src="https://github.com/user-attachments/assets/bce975ee-8e32-4d07-98a9-8f84fff689bf" />
+Here you will see that youtube has grey text and thumbnails unless hovered over(then its full of color). This is because im a night owl and im trying to limit brightness and bluelight. All played videos are normal with no added effects so its a minimal change in functionality beside saving your eyes (*I thought the pixel peepers would apreciate this*). That being said this is disabled by default. If you want to achieve this, simply download the userstylus extension in firefox and copy the css i provided in the flake in the "youtube" directory. paste it into the userstylus and Boom!, youre done. Easy.
 
 ## Fonts:
 [Maple Mono NF](https://github.com/subframe7536/maple-font) is the only font I use. You can easily add more but its so beautiful i use it system wide.
@@ -192,10 +202,13 @@ Complete list of [packages](https://github.com/ranger097/ranger097_nixos_dotfile
 ## Cursors:
 The cursor depicted in the screenshots above is a __[Pokemon Cursor](https://store.kde.org/p/1701595)__ (*you might be noticing a theme here.*) from the __[KDE Store](https://store.kde.org/browse/)__.
 
+## New Features:
+* Theme switcher 
+
 ## Coming Soon:
 * A website.    
-* Full theme switcher.
 * Hyprland settings app.
-* Waybar toggle script.
+* More Security features.
+* Anime Wallpapers.
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&weight=600&duration=4&pause=1000&color=74B9FF&vCenter=true&multiline=true&repeat=false&width=596&height=110&lines=Thank+you+so+much+for+the+Support.;I+really+hope+you+enjoy+this+Flake.;Please+leave+a+Star+and+Share+this;Flake+with+friends+and+colleagues.)](https://git.io/typing-svg)
