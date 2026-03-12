@@ -123,7 +123,7 @@ border: 1px;
 border-radius: 7px;
 background-color: rgba(0,0,0,0);
 border-color: rgba(0,0,0,0);
-color: @selected-normal-foreground;
+color: @color6;
 margin: 0px;    
 }
 
@@ -133,7 +133,7 @@ border: 1px;
 border-radius: 7px;
 background-color: rgba(0,0,0,0);
 border-color: rgba(0,0,0,0);
-color:  @color6;
+color:  @color9;
 margin: 0px;
 }
 
