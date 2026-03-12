@@ -79,7 +79,7 @@ nix flake update
 }
 
 
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 #source ~/.cache/wal/colors-tty.sh
 #fastfetch   
 pokeget random --hide-name
