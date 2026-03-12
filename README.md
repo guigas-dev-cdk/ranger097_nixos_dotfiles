@@ -94,7 +94,9 @@ Inside the ranger097_nixos_dotfiles repo lets enter the flake.nix.
 sudo nano flake.nix
 ```
 Okay look at the screenshot below.
-<img width="3840" height="2400" alt="2026-03-08-031149_hyprshot" src="https://github.com/user-attachments/assets/c3f2b8b0-84d0-47d2-8962-666c0abf3a17" />
+
+<img width="3840" height="2400" alt="2026-03-12-065338_hyprshot" src="https://github.com/user-attachments/assets/4c34841e-2b48-4da6-b8c8-70cb80df95c8" />
+
 Notice how "deoxy" is written 3 times in the flake. Remove the name "deoxy" and write in your hostname in all 3 locations in the highlighted area in the screenshot.
 
 ## 5.2 Keys
