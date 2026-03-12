@@ -32,7 +32,7 @@ background: @background;
 color: @color2;
 margin-right: 10px;
 border-radius: 10px;
-border: 1px solid @color4;
+border: 1px solid @color5;
 box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
 text-shadow: none;
 }
@@ -55,7 +55,6 @@ text-shadow: none;
 #battery { margin-right: 10px; }
 #window { margin-left: 10px; }
 #mpris { margin-right: 0px; }
-#custom-vpn_ip { color: #bcbcbc; }
 #custom-qmmp { margin-left: 0px; margin-right: 0px; }
 
 #workspaces button {
