@@ -15,9 +15,16 @@ with open(toggle_file, 'w') as f:
 cat_string_file = "/home/ranger/ranger097_nixos_dotfiles/wallpapers/wallpapers/" + wallpaper_directory[x]
 subprocess.run(["wal", "-i", cat_string_file])
 subprocess.run([
-    "swww", "img", cat_string_file,
-    "--transition-type", "grow",
-    "--transition-step", "90",
-    "--transition-fps", "50"
+"swww", "img", cat_string_file,
+"--transition-type", "grow",
+"--transition-step", "90",
+"--transition-fps", "50"
 ])
-
+subprocess.run(["cd", "~/ranger097_nixos_dotfiles"])
+subprocess.run(["git", "add", ".", "&>", "/dev/null"])
+subprocess.run(["sudo", "nixos-rebuild", "switch", "--flake", ".#jirachi"])
+subprocess.run(["hyprctl","reload"])
+subprocess.run(["pkill", "waybar"])
+subprocess.run(["nohup", "waybar", "-c", "~/.config/waybar/top.jsonc", "-s", "~/.config/waybar/top.css", ">", "/dev/null", "2>&1", "&"])
+subprocess.run(["nohup", "waybar", "-c", "~/.config/waybar/bottom.jsonc", "-s", "~/.config/waybar/bottom.css", ">", "/dev/null", "2>&1", "&"])
+subprocess.run(["disallow", "&>", "/dev/null"])
