@@ -122,7 +122,7 @@ inactive_opacity = 1.0
 #SHADOW
 shadow {
 enabled = true
-range = 6
+range = 8
 render_power = 2
 color = rgba(0,0,0,0.5)
 offset = -4 5
@@ -332,10 +332,6 @@ programs.firefox.profiles."${config.home.username}" = {
     }
   '';
 };
-
-
-
-
 
   # Let Home Manager manage itself
   programs.home-manager.enable = true;
