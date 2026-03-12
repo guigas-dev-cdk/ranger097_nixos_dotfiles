@@ -3,7 +3,7 @@ Made for developers who like very secure systems featuring [Lanzaboote](https://
 (*Quick note, the colors in this flake might seem off. This is because I use hyprsunset and you can easily disable it in hyprland.conf*)
 
 ## Instructions:
-This flake is hardware "agnostic(*for lack of a better word*)" (*because nixos is really [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*), but there are a few steps you need to take in order to successfully use this flake. If you dont have [luks](https://youtu.be/iRtVfqBXNVE?si=AU-ZzNTCsll_NwXP) encryption, you should start with that first. Second, secure boot is not optional with this flake you would be better off just cloning the repo or forking it and just copying what you want. This system flake designed to be secure (*and cool*).
+This flake is hardware "agnostic(*for lack of a better word*)" (*because nixos is really [Goated](https://pbs.twimg.com/media/HA4fYrxXkAE0Rt3.jpg) like that*), but there are a few steps you need to take in order to successfully use this flake. If you dont have [luks](https://youtu.be/iRtVfqBXNVE?si=AU-ZzNTCsll_NwXP) encryption, you should start with that first. Second, secure boot is not optional with this flake you would be better off just cloning the repo or forking it and just copying what you want. This system flake is designed to be secure (*and cool*).
 
 ## 1. Secure Boot (*aka lanzaboote*).
 The first step you must take is going to your bios settings and turning on secure boot. __IMPORTANT!__: You must make sure it is in "__SETUP_MODE__" OR "__AUDITED__" mode and __NOT__ in __"DEPLOYED"__ mode. (QUICK SIDE NOTE: Normally you would NOT use AUDITED mode but my laptop lacks setup mode and AUDITED mode worked for me and *Might* work for you.)<br/>
@@ -187,9 +187,9 @@ Complete list of [packages](https://github.com/ranger097/ranger097_nixos_dotfile
 The cursor depicted in the screenshots above is a __[Pokemon Cursor](https://store.kde.org/p/1701595)__ (*you might be noticing a theme here.*) from the __[KDE Store](https://store.kde.org/browse/)__.
 
 ## Coming Soon:
-* A website (*written in closurescript*).    
-* Full theme switcher (*written in golang*).
-* Hyprland settings app (*written in rust*).
-* Waybar toggle script (*written in python*).
+* A website.    
+* Full theme switcher.
+* Hyprland settings app.
+* Waybar toggle script.
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&weight=600&duration=4&pause=1000&color=74B9FF&vCenter=true&multiline=true&repeat=false&width=596&height=110&lines=Thank+you+so+much+for+the+Support.;I+really+hope+you+enjoy+this+Flake.;Please+leave+a+Star+and+Share+this;Flake+with+friends+and+colleagues.)](https://git.io/typing-svg)
