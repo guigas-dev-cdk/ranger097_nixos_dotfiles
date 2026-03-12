@@ -1,6 +1,6 @@
 /* ranger097 */
 
-@import "~/.cache/wal/colors-rofi-dark.rasi";
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 configuration {
 modes: [drun];
@@ -110,6 +110,11 @@ element-text.selected {
 text-color: @color6;
 background-color: rgba(255,0,0,0);
 }
+
+element-text selected {
+    text-color: @color6;
+}
+
 
 element.normal.normal,
 element alternate normal {
