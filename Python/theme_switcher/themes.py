@@ -7,8 +7,7 @@ num_of_wallpapers = len(wallpaper_directory)
 
 with open(toggle_file, 'r') as f:
     x = int(f.readline().strip())
-    print(x)
-
+    
 with open(toggle_file, 'w') as f:
     y = (x + 1) % (num_of_wallpapers + 1)
     full_file = f.write(str(y))
@@ -16,5 +15,3 @@ with open(toggle_file, 'w') as f:
 cat_string_file = "/home/ranger/ranger097_nixos_dotfiles/wallpapers/wallpapers/" + wallpaper_directory[x]
 subprocess.run(["swww", "img", cat_string_file,"--transition-step", "3", "--transition-type", "any", "--transition-angle" , "45", "--transition-fps", "120"])
 subprocess.run(["wal", "-i", cat_string_file])
-
-print(cat_string_file)
