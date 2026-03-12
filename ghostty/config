@@ -11,11 +11,11 @@ window-padding-x = 20
 window-padding-y = 20
 
 #PYWAL
-#config-file = ?~/.cache/wal/ghostty.conf
+config-file = ?~/.cache/wal/ghostty.conf
 
 #BACKGROUND_SETTINGS
-background-opacity = 1.0
-background = #000000
+background-opacity = 0.5
+#background = #000000
 #foreground = #909090
 #background-image = /home/ranger/ranger097_nixos_dotfiles/wallpapers/Guweiz/893152-digital-art-women-smoking-Bad-guys-legs-artwork.jpg
 background-image-opacity = 0.00
