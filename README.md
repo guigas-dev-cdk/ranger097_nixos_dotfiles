@@ -138,7 +138,9 @@ sudo nixos-rebuild switch --flake github:ranger097/ranger097_nixos_dotfiles#deox
 
 ## Features and Ricing.
 __[Rofi](https://github.com/davatorium/rofi)__
-<img width="3840" height="2400" alt="2026-03-04-025925_hyprshot" src="https://github.com/user-attachments/assets/bdbeca52-1adf-485a-ab1c-9d1000484f7d" />
+<img width="3840" height="2400" alt="2026-03-12-051820_hyprshot" src="https://github.com/user-attachments/assets/7a4508bd-df4e-4e7a-ab92-89aa7bd40e0d" />
+<img width="3840" height="2400" alt="2026-03-12-051909_hyprshot" src="https://github.com/user-attachments/assets/2ef24415-4866-4b09-8f32-e2e29c6b69ef" />
+<img width="3840" height="2400" alt="2026-03-12-051952_hyprshot" src="https://github.com/user-attachments/assets/06e83ae5-2994-4b85-8302-ed15f80db6cb" />
 
 __[Vscode](https://code.visualstudio.com/)__
 <img width="3840" height="2400" alt="2026-03-12-032539_hyprshot" src="https://github.com/user-attachments/assets/0fdd9655-607f-4143-91ed-3a45d4e32271" />
