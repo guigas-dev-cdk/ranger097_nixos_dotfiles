@@ -170,6 +170,17 @@ __[Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)__
 <img width="3840" height="2400" alt="2026-03-12-053157_hyprshot" src="https://github.com/user-attachments/assets/bce975ee-8e32-4d07-98a9-8f84fff689bf" />
 Here you will see that youtube has grey text and thumbnails unless hovered over(then its full of color). This is because im a night owl and im trying to limit brightness and bluelight. All played videos are normal with no added effects so its a minimal change in functionality beside saving your eyes (*I thought the pixel peepers would apreciate this*). That being said this is disabled by default. If you want to achieve this, simply download the userstylus extension in firefox and copy the css i provided in the flake in the "youtube" directory. paste it into the userstylus and Boom!, youre done. Easy.
 
+
+## Themes:
+There is probably 30 or 40 themes included in this flake.
+Thanks to SWWW, Pywal, and Python, you can easily switch themes as easy as pressing the "theme button" on the bottom left corner. (*Quick Note: Waybar is being managed by home-manager and will require you to update the flake in order to reload the waybar theme. If you are using my built-in bash scripts from bash.nix you can just run "jgit" or whatever you decide to change it too*). Here are some examples below.
+
+<img width="3840" height="2400" alt="2026-03-12-065730_hyprshot" src="https://github.com/user-attachments/assets/a5e50137-e0fa-459a-b569-0fa3ddd38b63" />
+<img width="3840" height="2400" alt="2026-03-12-065913_hyprshot" src="https://github.com/user-attachments/assets/05c52a05-7082-489c-ad35-71649db85d72" />
+<img width="3840" height="2400" alt="2026-03-12-065955_hyprshot" src="https://github.com/user-attachments/assets/30231278-64b2-4315-bd05-40728f759ec8" />
+<img width="3840" height="2400" alt="2026-03-12-070030_hyprshot" src="https://github.com/user-attachments/assets/10926a34-6a6a-483a-8296-e1363dff12be" />
+<img width="3840" height="2400" alt="2026-03-12-070221_hyprshot" src="https://github.com/user-attachments/assets/77369a1a-a104-4451-8e88-2c3020210f87" />
+
 ## Fonts:
 [Maple Mono NF](https://github.com/subframe7536/maple-font) is the only font I use. You can easily add more but its so beautiful i use it system wide.
 Im a sucker for font ligatures and italics(*I need all my fancy programming symbols and fancy cursive functions*).<br/>
