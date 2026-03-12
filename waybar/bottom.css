@@ -95,6 +95,7 @@ padding-left: 9px;
 padding-right: 6px;
 }
 
+#custom-themes:hover,
 #custom-power:hover,
 #custom-VacuumTube:hover,
 #custom-ProtonVpn:hover,
@@ -107,8 +108,8 @@ padding-right: 6px;
 #custom-blender:hover,
 #custom-dolphin:hover,
 #custom-volume:hover {
-color: rgba(200,200,200,1);
-background: linear-gradient(rgba(100,100,100,1));
+color: @background;
+background: @color5;
 }
 
 #custom-spacerRight {
