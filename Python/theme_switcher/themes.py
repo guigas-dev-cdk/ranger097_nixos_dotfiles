@@ -16,8 +16,8 @@ cat_string_file = "/home/ranger/ranger097_nixos_dotfiles/wallpapers/wallpapers/"
 subprocess.run(["wal", "-i", cat_string_file])
 subprocess.run([
     "swww", "img", cat_string_file,
-    "--transition-step", "90", 
-    "--transition-type", "wave",
-    "--transition-fps", "30"
+    "--transition-type", "grow",
+    "--transition-step", "90",
+    "--transition-fps", "50"
 ])
 
