@@ -7,6 +7,7 @@ window#waybar {
 background: linear-gradient(rgba(200,200,200,0));
 border: 0px solid #000000;
 }
+
 #custom-themes,
 #custom-spacerRight,
 #custom-spacerLeft,
@@ -41,6 +42,12 @@ box-shadow: -2px 3px 3px rgba(0,0,0,0.5);
 #custom-power {
 padding-left: 10px;
 padding-right: 5px;
+}
+
+#custom-themes {
+padding-left: 10px;
+padding-right: 5px;
+margin-left: 10px;
 }
 
 #custom-code {
