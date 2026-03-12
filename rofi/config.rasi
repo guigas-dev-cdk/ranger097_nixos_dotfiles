@@ -1,9 +1,8 @@
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
-* { 
-    font: "Maple Mono NF 12"; 
+* {
+    font: "Maple Mono NF 12";
     background-color: transparent;
-    text-color: @color5; 
 }
 
 configuration {
@@ -33,20 +32,21 @@ mainbox {
 }
 
 inputbar {
-    text-color: @selected-active-foreground;
+    text-color: #ffffff;
     background-color: transparent;
     margin: -30px 0px 110px 0px;
 }
 
 prompt {
-    text-color: @selected-active-foreground;
+    text-color: #ffffff;
     background-color: transparent;
 }
 
 entry {
     placeholder: "Search here";
+    placeholder-color: #444444;
     background-color: transparent;
-    text-color: @color6;
+    text-color: #ffffff;
 }
 
 listview {
@@ -74,19 +74,15 @@ element-text {
 element normal.normal,
 element alternate.normal {
     background-color: transparent;
-    text-color:       @color9; 
+    text-color:       #ffffff; 
 }
 
 element selected.normal {
-    background-color: rgba(255, 255, 255, 0.1);
-    text-color:       @color7; 
+    background-color: #333333;
+    text-color:       #ff0000; 
 }
 
 button {
     background-color: transparent;
-    color: @color3;
-}
-
-button selected normal {
-    color: @color3;
+    text-color: #ffffff;
 }
