@@ -55,6 +55,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
+  security.sudo.wheelNeedsPassword = false; 
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Versioning - Set to Unstable/Next Release
