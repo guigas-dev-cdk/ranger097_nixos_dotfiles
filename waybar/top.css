@@ -29,10 +29,10 @@ font-family: Maple Mono NF;
 font-size: 12px;
 font-weight: 400;
 background: @background;
-color: @color6;
+color: @color2;
 margin-right: 10px;
 border-radius: 10px;
-border: 1px solid @color4;
+border: 1px solid @color6;
 box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
 text-shadow: none;
 }
@@ -40,7 +40,7 @@ text-shadow: none;
 #window:hover, #mpris:hover,
 #clock:hover, #custom-vpn_ip:hover,
 #battery:hover, #workspaces:hover {
-color: rgba(200,60,60,1);
+color: @color4;
 box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;    
@@ -72,7 +72,7 @@ transition: none;
 #workspaces button:hover {
 background: none; 
 background-color: rgba(0,0,0,0); 
-color: rgba(200,60,60,1); 
+color: @color4; 
 box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;
@@ -82,7 +82,7 @@ transition: none;
 #workspaces button.active {
 background: none; 
 background-color: rgba(0,0,0,0);
-color: rgba(120,120,120,1); 
+color: @color6; 
 box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;
