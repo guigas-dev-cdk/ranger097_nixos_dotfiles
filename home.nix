@@ -94,10 +94,10 @@ gaps_out = 0,10,0,10
 border_size = 1
 
 #BORDER
-#col.active_border = rgba(249,238,195,1)
-#col.inactive_border = rgba(249,238,195,1)
-col.active_border = rgba(0,0,0,1)
-col.inactive_border = rgba(0,0,0,1)
+col.active_border = $color1
+col.inactive_border = $color1
+#col.active_border = rgba(0,0,0,1)
+#col.inactive_border = rgba(0,0,0,1)
 
 #BORDER_ANIMATION
 #animations {
@@ -115,7 +115,7 @@ layout = dwindle
 #WINDOW_SETTINGS_START
 decoration {
 rounding = 10
-rounding_power = 3
+rounding_power = 2
 active_opacity = 1.0
 inactive_opacity = 1.0
 
