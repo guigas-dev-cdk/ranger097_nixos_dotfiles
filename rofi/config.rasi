@@ -15,12 +15,13 @@ location: center;
 anchor: center;
 /*transparency: "real";*/
 padding: 0px;
-border: 1px;
-border-radius: 10px;
+border: 0px;
+border-radius: 20px;
 spacing: 0px;
 children: [mainbox];
 orientation: horizontal;
 background-color: @background;
+background-color: #000000;
 height : 300px;
 width: 600px;
 border-color: @selected-normal-background;
