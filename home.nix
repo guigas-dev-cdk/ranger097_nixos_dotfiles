@@ -96,8 +96,8 @@ border_size = 1
 #BORDER
 #col.active_border = rgba(249,238,195,1)
 #col.inactive_border = rgba(249,238,195,1)
-col.active_border = $background
-col.inactive_border = $background
+col.active_border = rgba(0,0,0,1)
+col.inactive_border = rgba(0,0,0,1)
 
 #BORDER_ANIMATION
 #animations {
@@ -124,7 +124,7 @@ shadow {
 enabled = true
 range = 10
 render_power = 3
-color = rgba(0,0,0,0.5)
+color = rgba(0,0,0,0.3)
 offset = -1 1
 sharp = false
 scale = 1.0
