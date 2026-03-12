@@ -20,11 +20,9 @@ subprocess.run([
 "--transition-step", "90",
 "--transition-fps", "50"
 ])
-subprocess.run(["cd", "~/ranger097_nixos_dotfiles"])
-subprocess.run(["git", "add", ".", "&>", "/dev/null"])
-subprocess.run(["sudo", "nixos-rebuild", "switch", "--flake", ".#jirachi"])
+subprocess.run(f"cd ~/ranger097_nixos_dotfiles && git add .",shell=True, stdout=subprocess.DEVNULL)
+subprocess.run(["sudo", "nixos-rebuild", "switch", "--flake", "/home/ranger/ranger097_nixos_dotfiles/#jirachi"])
 subprocess.run(["hyprctl","reload"])
 subprocess.run(["pkill", "waybar"])
-subprocess.run(["nohup", "waybar", "-c", "~/.config/waybar/top.jsonc", "-s", "~/.config/waybar/top.css", ">", "/dev/null", "2>&1", "&"])
-subprocess.run(["nohup", "waybar", "-c", "~/.config/waybar/bottom.jsonc", "-s", "~/.config/waybar/bottom.css", ">", "/dev/null", "2>&1", "&"])
-subprocess.run(["disallow", "&>", "/dev/null"])
+subprocess.Popen(["waybar", "-c", os.path.expanduser("~/.config/waybar/top.jsonc"), "-s", os.path.expanduser("~/.config/waybar/top.css")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+subprocess.Popen(["waybar", "-c", os.path.expanduser("~/.config/waybar/bottom.jsonc"), "-s", os.path.expanduser("~/.config/waybar/bottom.css")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
