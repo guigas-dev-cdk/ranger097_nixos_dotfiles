@@ -77,7 +77,8 @@ lsblk -f
 My ID is "__luks-7c42da92-5364-41d0-900d-68c9410d94e3__"<br/>
 Delete "PASTE THE UUID YOU GET WHEN RUNNING THE COMMAND HERE." and replace it with "YOUR ID" (*aka UUID when you run the command above*) (*Hint: use the highlighted locations displayed in the screenshot if you need help with the formating*)
 *__IMPORTANT__: Notice i have __2__ luks devices. Big chance you have __1__. If so great. If not, add one.
-<img width="3840" height="2400" alt="2026-03-08-012218_hyprshot" src="https://github.com/user-attachments/assets/0b63ea00-f57c-49ba-bae5-f2438049bc52" />
+<img width="3840" height="2400" alt="2026-03-12-064913_hyprshot" src="https://github.com/user-attachments/assets/713713ef-07ac-4a4e-85dc-351ac94b5473" />
+
 The screenshot above is how i have added my second device if you needed too as well.
 Save the file and exit back to the terminal.
 
