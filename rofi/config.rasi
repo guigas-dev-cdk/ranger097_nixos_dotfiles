@@ -2,6 +2,8 @@
 
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
+* { font: "Maple Mono NF 12"; background-color: rgba(0,0,0,0); }
+
 configuration {
 modes: [drun];
 prompt: "";
@@ -126,4 +128,3 @@ color:  @color3;
 margin: 0px;
 }
 
-* { font: "Maple Mono NF 12"; background-color: #000000; }
