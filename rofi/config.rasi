@@ -8,8 +8,6 @@ prompt: "";
 font: "Maple Mono NF";
 }
 
-* { font: "Maple Mono NF 12"; }
-
 window {
 location: center;
 anchor: center;
@@ -139,3 +137,5 @@ border-color: rgba(0,0,0,0);
 color:  @selected-normal-foreground;
 margin: 0px;
 }
+
+* { font: "Maple Mono NF 12"; background-color: #000000; }
