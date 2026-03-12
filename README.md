@@ -196,14 +196,13 @@ Complete list of [packages](https://github.com/ranger097/ranger097_nixos_dotfile
 ## Cursors:
 The cursor depicted in the screenshots above is a __[Pokemon Cursor](https://store.kde.org/p/1701595)__ (*you might be noticing a theme here.*) from the __[KDE Store](https://store.kde.org/browse/)__.
 
+## New Features:
+* Theme switcher 
+
 ## Coming Soon:
 * A website.    
 * Hyprland settings app.
 * More Security features.
 * Anime Wallpapers.
-
-## New Features:
-* Theme switcher 
-
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Maple+mono&weight=600&duration=4&pause=1000&color=74B9FF&vCenter=true&multiline=true&repeat=false&width=596&height=110&lines=Thank+you+so+much+for+the+Support.;I+really+hope+you+enjoy+this+Flake.;Please+leave+a+Star+and+Share+this;Flake+with+friends+and+colleagues.)](https://git.io/typing-svg)
