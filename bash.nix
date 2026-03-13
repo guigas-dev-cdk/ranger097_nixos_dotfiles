@@ -11,7 +11,6 @@ hii = "sudo nano ~/ranger097_nixos_dotfiles/home.nix";
 wii = "cd ~/ranger097_nixos_dotfiles/waybar";
 cii = "cd ~/.config";
 ls = "lsd -a";
-change_theme = "python /home/ranger/ranger097_nixos_dotfiles/Python/theme_switcher/themes.py";
 ytdownload = "yt-dlp -x --audio-format mp3 --audio-quality 0 --cookies-from-browser firefox --embed-metadata --embed-thumbnail --add-metadata";
 };
    
@@ -35,13 +34,6 @@ echo " Building system flake..."
 sudo nixos-rebuild switch --flake .#deoxy
 wait
 echo " Updated dotfiles and system flake."
-echo "󰑓 Reloading configs."
-hyprctl reload
-pkill waybar
-nohup waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css > /dev/null 2>&1 &
-nohup waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css > /dev/null 2>&1 &
-disallow &> /dev/null
-echo " Done"
 }
 
 jgit() {
@@ -63,13 +55,6 @@ echo " Building system flake..."
 sudo nixos-rebuild switch --flake .#jirachi
 wait
 echo " Updated dotfiles and system flake."
-echo "󰑓 Reloading configs."
-hyprctl reload
-pkill waybar
-nohup waybar -c ~/.config/waybar/top.jsonc -s ~/.config/waybar/top.css > /dev/null 2>&1 & 
-nohup waybar -c ~/.config/waybar/bottom.jsonc -s ~/.config/waybar/bottom.css > /dev/null 2>&1 &
-disallow &> /dev/null
-echo " Done"
 }
 
 upgrade() {
