@@ -1,7 +1,6 @@
 /* ranger097 */
-/*@import url("file:///home/ranger/.cache/wal/colors-waybar.css");*/
-
 @import "../../.cache/wal/colors-waybar.css";
+@import "../../.cache/wal/colors-waybar-rgba.css";
 
 window#waybar {
 background: linear-gradient(rgba(200,200,200,0));
@@ -38,7 +37,7 @@ border-radius: 10px;
 font-family: Maple Mono NF;
 font-size: 15px;
 font-weight: 300;
-background: @color0;
+background: @waybar-bg;
 color: @color10;
 box-shadow: -2px 3px 3px rgba(0,0,0,0.5);
 }
@@ -121,6 +120,10 @@ padding-left: 9px;
 padding-right: 6px;
 }
 
+#wireplumber:hover,
+#network:hover,
+#bluetooth:hover,
+#custom-nixos:hover,
 #custom-themes:hover,
 #custom-power:hover,
 #custom-VacuumTube:hover,
@@ -134,8 +137,8 @@ padding-right: 6px;
 #custom-blender:hover,
 #custom-dolphin:hover,
 #custom-volume:hover {
-color: @color0;
-background: @color1;
+color: @color3;
+background: @color3;
 }
 
 #custom-spacerRight {
