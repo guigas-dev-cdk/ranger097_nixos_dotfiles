@@ -295,7 +295,7 @@ bindl = , XF86AudioPrev, exec, playerctl previous
 #KEYBINDING_SETTINGS_END
 
 #WINDOW_RULE_SETTINGS_START
-windowrule = match:class code, opacity 0.7
+windowrule = match:class code, opacity 0.6
 windowrule = match:class firefox, opacity 1.0
 windowrule = match:class discord, opacity 1.0
 windowrule = match:fullscreen opacity 1.0 override
@@ -312,24 +312,6 @@ layerrule = blur on, match:namespace waybar
 layerrule = blur on, match:namespace wlogout
 #LAYER_RULE_SETTINGS_END
 '';  
-};
-
-programs.firefox.profiles."${config.home.username}" = {
-  userContent = ''
-  @import url("file://${config.home.homeDirectory}/.cache/wal/colors.css");
-
-  body {
-        background-color: var(--background) !important;
-        color: var(--foreground) !important;
-    }
-
-    @-moz-document url("about:newtab"), url("about:home") {
-      body {
-        background-image: var(--wallpaper) !important;
-        background-size: cover !important;
-      }
-    }
-  '';
 };
 
   # Let Home Manager manage itself
