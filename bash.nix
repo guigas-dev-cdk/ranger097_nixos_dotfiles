@@ -78,7 +78,7 @@ echo " Upgrading Nixos System"
 nix flake update
 }
 
-#fastfetch   
+source "$HOME/.cache/wal/colors.sh"
 pokeget random --hide-name
 eval "$(direnv hook bash)"
 eval "$(starship init bash)"
