@@ -24,16 +24,16 @@
  
   outputs = { self, nixpkgs, home-manager, lanzaboote, ... }@inputs: {
    nixosConfigurations = {
-     deoxy = nixpkgs.lib.nixosSystem {
+     guilherme = nixpkgs.lib.nixosSystem {
      system = "x86_64-linux";
      specialArgs = { inherit inputs; };
      modules = [
-   ./hosts/deoxy/hardware-configuration.nix
+   ./hosts/guilherme/hardware-configuration.nix
    ./configuration.nix
      home-manager.nixosModules.home-manager
      lanzaboote.nixosModules.lanzaboote
     ({ pkgs, lib, ... }: {
-     networking.hostName = "deoxy";
+     networking.hostName = "guilherme";
      boot.loader.systemd-boot.enable = lib.mkForce false;
      boot.lanzaboote = {
      enable = true;
