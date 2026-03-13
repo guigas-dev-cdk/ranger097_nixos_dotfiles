@@ -31,7 +31,7 @@ color: @color6;
 margin-right: 10px;
 border-radius: 10px;
 border: 2px solid #000000;
-box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+box-shadow: none;
 text-shadow: none;
 }
 
@@ -43,8 +43,7 @@ box-shadow: none;
 text-shadow: none;
 -gtk-icon-shadow: none;    
 transition: none;
-text-shadow: none;
-box-shadow: -2px 3px 3px rgba(0,0,0,0.4);
+box-shadow: none;
 text-shadow: none;
 }
 
