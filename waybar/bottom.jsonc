@@ -22,7 +22,7 @@
    // "custom/blender",
    // "custom/dolphin",
    // "custom/steam",
-    "custom/discord",
+   // "custom/discord",
     "custom/volume"
     ],
     "modules-right": [
@@ -106,7 +106,7 @@
 },
 
 "custom/themes": {
-"format": " Themes",
+"format": "  Theme",
 "on-click":"direnv exec /home/ranger/ranger097_nixos_dotfiles/Python/theme_switcher python /home/ranger/ranger097_nixos_dotfiles/Python/theme_switcher/themes.py"
 },
 
