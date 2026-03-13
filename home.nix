@@ -28,8 +28,14 @@ in
     ".config/starship.toml".source = ./starship/starship.toml;
     ".config/rofi".source = ./rofi; 
     ".config/wlogout".source = ./wlogout;
-    ".config/wal".source = ./wal;  
 };
+
+xdg.configFile."wal/templates/colors-waybar-rgba.css".text = ''
+  @define-color waybar-bg rgba({color3.rgb}, 0.6);
+  @define-color accent-color rgba({color1.rgb}, 0.5);
+'';
+
+
 
 wayland.windowManager.hyprland = {
 enable = true;
