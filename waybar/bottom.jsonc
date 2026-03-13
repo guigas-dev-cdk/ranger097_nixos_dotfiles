@@ -116,11 +116,13 @@
 },
 
 "network": {
+"format": "{icon}",
 "format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
 "on-click": "nm-connection-editor"
 },
 
 "bluetooth": {
+"format": "{icon}",
 "format-icons": [ " ", "󰂱 "],
 "on-click": "blueman-manager"
 }
