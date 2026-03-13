@@ -62,8 +62,9 @@ cd ~/ranger097_nixos_dotfiles
 echo " Upgrading Nixos System"
 nix flake update
 }
-
-(cat $HOME/.cache/wal/sequences)
+source "$HOME/.cache/wal/colors.sh"
+#(cat $HOME/.cache/wal/sequences)
+printf "\e]11;%s\a" "$color4"
 pokeget random --hide-name
 eval "$(direnv hook bash)"
 eval "$(starship init bash)"
