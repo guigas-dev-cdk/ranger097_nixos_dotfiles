@@ -92,7 +92,7 @@
 },
 
 "wireplumber": {
-"format": "{icon}",
+"format": "{icon} Volume",
 "format-icons": [ " ", " ", " " ],
 "tooltip-format": "volume: {volume}%",
 "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -116,12 +116,12 @@
 },
 
 "network": {
-"format":"{icon} Wifi",
+"format":"{icon}",
 "interface": "wlp0s20f3",
 "interval": 5,
-"format-wifi": "󰤨 ", 
-"format-ethernet": "󰤨 ",               
-"format-disconnected": "󰤯 ", 
+"format-wifi": "󰤨  Wifi", 
+"format-ethernet": "󰤨  Wifi",               
+"format-disconnected": "󰤯  Wifi", 
 "on-click": "nm-connection-editor"    
 },
 
