@@ -30,8 +30,8 @@ padding-top: 5px;
 padding-bottom: 5px;
 margin-top: 5px;
 margin-bottom: 5px;
-margin-left: 3px;
-margin-right: 3px;
+margin-left: 0px;
+margin-right: 0px;
 border: 0px solid @color5;
 border-radius: 0px;
 font-family: Maple Mono NF;
@@ -44,7 +44,7 @@ box-shadow: none;
 
 #wireplumber {
 padding-left: 10px;
-padding-right: 10px;
+padding-right: 5px;
 }
 
 #network {
