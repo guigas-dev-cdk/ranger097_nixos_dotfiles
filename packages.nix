@@ -55,6 +55,7 @@ pokeget-rs
 nmap
 pywal16
 pywalfox-native
+tor-browser
 ];
 
 fonts.packages = with pkgs;[
