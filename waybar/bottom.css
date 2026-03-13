@@ -3,7 +3,7 @@
 @import "../../.cache/wal/colors-waybar-rgba.css";
 
 window#waybar {
-background: linear-gradient(rgba(200,200,200,0));
+background: linear-gradient(rgba(0,0,0,1));
 border: 0px solid #000000;
 }
 
@@ -28,16 +28,16 @@ border: 0px solid #000000;
 #custom-volume {
 padding-top: 5px;
 padding-bottom: 5px;
-margin-top: 0px;
-margin-bottom: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
 margin-left: 3px;
 margin-right: 3px;
 border: 0px solid @color5;
-border-radius: 10px;
+border-radius: 100px;
 font-family: Maple Mono NF;
 font-size: 15px;
 font-weight: 300;
-background: @blurblack;
+background: @color0;
 color: @color10;
 box-shadow: none;
 }
