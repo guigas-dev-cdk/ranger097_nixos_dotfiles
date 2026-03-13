@@ -28,7 +28,8 @@ in
     ".config/starship.toml".source = ./starship/starship.toml;
     ".config/rofi".source = ./rofi; 
     ".config/wlogout".source = ./wlogout;
-  };
+    ".config/wal".source = ./wal;  
+};
 
 wayland.windowManager.hyprland = {
 enable = true;
