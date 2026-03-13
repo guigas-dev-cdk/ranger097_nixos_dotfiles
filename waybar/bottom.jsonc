@@ -116,9 +116,11 @@
 },
 
 "network": {
-"format": "{icon}",
-"format-icons": [ "󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 " ],
-"on-click": "nm-connection-editor"
+"interval": 5,
+"format-wifi": "󰤨 ", 
+"format-ethernet": "󰤨 ",               
+"format-disconnected": "󰤯 ", 
+"on-click": "nm-connection-editor"    
 },
 
 "bluetooth": {
