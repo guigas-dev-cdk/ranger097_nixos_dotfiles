@@ -30,7 +30,7 @@ background-color: @waybar-bg;
 color: @color11;
 margin-right: 10px;
 border-radius: 10px;
-border: 1px solid #000000;
+border: 1px solid @color4;
 box-shadow: none;
 text-shadow: none;
 }
