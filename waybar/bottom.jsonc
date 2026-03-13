@@ -92,6 +92,7 @@
 },
 
 "wireplumber": {
+"format": "{icon}",
 "format-icons": [ " ", " ", " " ],
 "tooltip-format": "volume: {volume}%",
 "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
